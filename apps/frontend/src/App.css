@@ -1,9 +1,19 @@
-.app {
+.App {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(0, 0, 0, 0.59);
+  color: white;
+
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   letter-spacing: 0.00938em;
   font-size: 18px;
   font-weight: 400;
+}
+
+.Page {
+  flex-grow: 1;
 }
 
 body {
