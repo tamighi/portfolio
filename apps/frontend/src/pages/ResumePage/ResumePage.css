@@ -11,15 +11,12 @@
 
 @media (max-width: 800px) {
   .ResumePage {
-    margin-right: 0;
-    margin-left: 0;
+    margin: 20px 0 0 4px;
   }
 }
 
 .ResumeSection {
-  border: 1px solid;
   width: 100%;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -32,12 +29,12 @@
 }
 
 .ResumeContent {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .ResumeContent li {
   list-style: none;
-  border: 1px solid;
+  margin-bottom: 5px;
 }
 
 .ResumeContent ul {
@@ -48,4 +45,5 @@
 
 .ResumeBackLink {
   align-self: self-start;
+  margin: 5px 0 0 5px;
 }

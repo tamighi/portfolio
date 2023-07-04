@@ -7,6 +7,8 @@ const PersonalInfos = () => {
           <li>Name: Thomas Amighi</li>
           <li>Email: amighithomas@gmail.com</li>
           <li>Tel: 0032 474071641</li>
+          <li>Github: https://github.com/tamighi</li>
+          <li>Languages: French, English</li>
         </ul>
       </div>
     </div>
