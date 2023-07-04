@@ -1,5 +1,5 @@
 import { App } from "App";
-import { ErrorPage, HomePage } from "pages";
+import { ErrorPage, HomePage, ResumePage } from "pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -10,6 +10,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <HomePage />,
+      },
+      {
+        path: "resume",
+        element: <ResumePage />,
       },
       {
         path: "*",
