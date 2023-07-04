@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "scripts": {
+    "prod": "sudo docker compose up"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.9.3"
+  }
+}
