@@ -9,7 +9,6 @@
     "build": "webpack --config webpack/webpack.config.js --env env=prod"
   },
   "dependencies": {
-    "@mui/base": "^5.0.0-beta.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1"

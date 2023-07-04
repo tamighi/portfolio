@@ -1,16 +1,13 @@
 .HomePage {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  flex-grow: 1;
 }
 
 @media (max-width: 600px) {
   .HomePage {
     grid-template-columns: 1fr;
   }
-}
-
-.About {
-  background-color: red;
 }
 
 .Links {

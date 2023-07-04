@@ -1,0 +1,13 @@
+.About {
+  align-self: center;
+  justify-self: center;
+}
+
+.AboutTitle {
+  font-family: Caprasimo;
+  font-size: 32px;
+}
+
+.AboutSubtitle {
+  margin-left: 8px;
+}
