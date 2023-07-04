@@ -1,4 +1,4 @@
-import About from "./About";
+import About from "./Introduction";
 import Links from "./Links";
 
 import "./HomePage.css";

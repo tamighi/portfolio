@@ -1,13 +1,13 @@
-.About {
+.Introduction {
   align-self: center;
   justify-self: center;
 }
 
-.AboutTitle {
+.IntroductionTitle {
   font-family: Caprasimo;
   font-size: 32px;
 }
 
-.AboutSubtitle {
+.IntroductionSubtitle {
   margin-left: 8px;
 }
