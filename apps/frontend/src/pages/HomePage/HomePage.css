@@ -2,10 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-grow: 1;
+  margin-bottom: 150px;
 }
 
 @media (max-width: 600px) {
   .HomePage {
     grid-template-columns: 1fr;
+    margin-bottom: 0;
   }
 }
