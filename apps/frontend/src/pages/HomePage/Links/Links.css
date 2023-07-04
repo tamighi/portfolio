@@ -1,0 +1,11 @@
+.HomeLinks {
+  align-self: center;
+  justify-self: center;
+}
+
+.HomeLink {
+  font-family: Caprasimo;
+  font-size: 32px;
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,11 +1,13 @@
-import  About from "./About";
-import "./HomePage.css"
+import About from "./About";
+import Links from "./Links";
+
+import "./HomePage.css";
 
 const HomePage = () => {
   return (
     <div className="HomePage">
       <About />
-      <div>Links</div>
+      <Links />
     </div>
   );
 };
