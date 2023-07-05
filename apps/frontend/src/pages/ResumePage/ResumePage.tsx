@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 import { About } from "./About";
-import { Experience } from "./Experience";
-import { PersonalInfos } from "./PersonalInfos";
+import { Education } from "./Education";
+import { ResumeContactButton } from "./ResumeContactButton";
 
 import "./ResumePage.css";
 
@@ -13,9 +13,12 @@ const ResumePage = () => {
         Go home
       </Link>
       <div className="ResumePage">
+        <a href="/resume/download" download="">
+          Download full resume
+        </a>
         <About />
-        <PersonalInfos />
-        <Experience />
+        <Education />
+        <ResumeContactButton />
       </div>
     </>
   );

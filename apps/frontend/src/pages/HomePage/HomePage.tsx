@@ -1,5 +1,5 @@
 import About from "./Introduction";
-import Links from "./Links";
+import HomeLinks from "./HomeLinks";
 
 import "./HomePage.css";
 
@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div className="HomePage">
       <About />
-      <Links />
+      <HomeLinks />
     </div>
   );
 };

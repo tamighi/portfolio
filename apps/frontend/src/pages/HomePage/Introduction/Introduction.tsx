@@ -4,7 +4,9 @@ const Presentation = () => {
   return (
     <div className="Introduction">
       <h2 className="IntroductionTitle">Thomas Amighi</h2>
-      <div className="IntroductionSubtitle">Software Developer</div>
+      <div className="IntroductionSubtitle">
+        Full-Stack / Software Developer
+      </div>
     </div>
   );
 };

@@ -1,8 +1,7 @@
-const Experience = () => {
+const Education = () => {
   return (
     <div className="ResumeSection">
-      <h2 className="ResumeTitle">Experience / Education</h2>
-      <h3 className="ResumeSubtitle">Education</h3>
+      <h2 className="ResumeTitle">Education</h2>
       <div className="ResumeContent">
         <ul>
           <li>
@@ -22,7 +21,7 @@ const Experience = () => {
             (Project exemples ...)
           </li>
           <li>
-            ULB Sep 2018 – June 2021
+            ULB Sep 2015 – June 2021
             <br />
             Master’s degree in neuropsychology; Courses in neuropsychology,
             neurology and research in this field (neuropsychology of aging, of
@@ -30,16 +29,10 @@ const Experience = () => {
             <br />
             (Experience ...)
           </li>
-          <li>
-            ULB Sep 2015 – June 2018
-            <br /> Bachelor’s degree in psychology (clinical psychology, social
-            psychology, data analysis, educational psychology, neuropsychology,
-            …)
-          </li>
         </ul>
       </div>
     </div>
   );
 };
 
-export default Experience;
+export default Education;
