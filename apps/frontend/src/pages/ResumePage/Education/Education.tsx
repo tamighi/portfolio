@@ -2,8 +2,7 @@ import "./Education.css";
 
 const Education = () => {
   return (
-    <div className="ResumeSection">
-      <h2 className="ResumeTitle">Education</h2>
+    <>
       <div className="EducationSection">
         <div className="EducationSectionHeader">
           <span>Self learning</span>
@@ -11,7 +10,7 @@ const Education = () => {
         </div>
         <div className="EducationSectionContent">
           <span>DESCRIPTION: Self learning ...</span>
-          <span>Link</span>
+          <span>Links</span>
         </div>
       </div>
       <div className="EducationSection">
@@ -25,7 +24,7 @@ const Education = () => {
             offers an original way of teaching in the form of projects
             implementation and peer to peer evaluation
           </span>
-          <span>Link</span>
+          <span>Links</span>
         </div>
       </div>
       <div className="EducationSection">
@@ -42,7 +41,7 @@ const Education = () => {
           <span>No Link :(</span>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

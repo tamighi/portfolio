@@ -1,5 +1,4 @@
 .SkillListsContainer {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }

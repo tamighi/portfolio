@@ -1,7 +1,6 @@
 const About = () => {
   return (
-    <div className="ResumeSection">
-      <h2 className="ResumeTitle">About me</h2>
+    <>
       <p>
         I'm a Neuropsychology master's graduate turned passionate developer. My
         journey led me to School 19 (42 network), renowned for its unique
@@ -17,7 +16,7 @@ const About = () => {
           (coding, 3D modeling, finances, ...)
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 
