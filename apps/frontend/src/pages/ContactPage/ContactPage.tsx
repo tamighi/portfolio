@@ -1,4 +1,6 @@
-import { BackHomeButton, ResponsivePage } from "components";
+import { BackHomeButton, Input, ResponsivePage } from "components";
+import TextArea from "components/Input/TextArea";
+
 import "./ContactPage.css";
 
 const ContactPage = () => {
@@ -8,10 +10,10 @@ const ContactPage = () => {
       <ResponsivePage className="ContactPage">
         <form className="ContactFormContainer">
           <div className="ContactFormTopInputs">
-            <input className="ContactFormInput" placeholder="name" />
-            <input className="ContactFormInput" placeholder="email" />
+            <Input placeholder="name" />
+            <Input placeholder="email" />
           </div>
-          <textarea placeholder="message" />
+          <TextArea placeholder="message" />
           <button>Send</button>
         </form>
       </ResponsivePage>

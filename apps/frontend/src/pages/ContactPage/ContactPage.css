@@ -14,7 +14,3 @@
 .ContactFormTopInputs {
   display: flex;
 }
-
-.ContactFormInput {
-  flex-grow: 1;
-}
