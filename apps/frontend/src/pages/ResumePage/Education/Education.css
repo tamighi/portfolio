@@ -1,0 +1,15 @@
+.EducationSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.EducationSectionHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.EducationSectionContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
