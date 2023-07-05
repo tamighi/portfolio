@@ -14,7 +14,6 @@ const ResumePage = () => {
         <a href="/resume/download" download="" className="DownloadResumeButton">
           Download full resume
         </a>
-
         <div className="ResumeSection">
           <h2 className="ResumeTitle">About</h2>
           <About />
@@ -27,7 +26,7 @@ const ResumePage = () => {
           <h2 className="ResumeTitle">Education</h2>
           <Education />
         </div>
-        <ContactMeButton />
+        <ContactMeButton className="ResumeContactButton" />
       </ResponsivePage>
     </>
   );
