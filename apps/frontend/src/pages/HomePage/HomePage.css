@@ -5,7 +5,7 @@
   margin-bottom: 150px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .HomePage {
     grid-template-columns: 1fr;
     margin-bottom: 0;

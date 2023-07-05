@@ -7,4 +7,14 @@
 .WorkSection {
   align-self: stretch;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.WorkDemo {
+  font-size: 22px;
+}
+
+.WorkDescription {
+  font-size: 22px;
 }

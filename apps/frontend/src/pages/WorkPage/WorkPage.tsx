@@ -1,13 +1,22 @@
-import { ResponsivePage } from "components";
+import { BackHomeButton, ResponsivePage } from "components";
 
 import "./WorkPage.css";
 
 const WorkPage = () => {
   return (
-    <ResponsivePage className="WorkPage">
-      <div className="WorkSection">Work1</div>
-      <div className="WorkSection">Work2</div>
-    </ResponsivePage>
+    <>
+      <BackHomeButton />
+      <ResponsivePage className="WorkPage">
+        <div className="WorkSection">
+          <div className="WorkDemo">demo</div>
+          <div className="WorkDescription">description</div>
+        </div>
+        <div className="WorkSection">
+          <div className="WorkDemo">demo</div>
+          <div className="WorkDescription">description</div>
+        </div>
+      </ResponsivePage>
+    </>
   );
 };
 

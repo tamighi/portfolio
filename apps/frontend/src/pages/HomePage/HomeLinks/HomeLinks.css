@@ -6,7 +6,15 @@
   gap: 50px;
 }
 
+@media (max-width: 768px) {
+  .HomeLinks {
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+}
+
 .HomeLink {
   font-family: Caprasimo;
   font-size: 32px;
 }
+
