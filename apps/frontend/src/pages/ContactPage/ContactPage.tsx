@@ -14,7 +14,7 @@ const ContactPage = () => {
             <Input placeholder="email" />
           </div>
           <TextArea placeholder="message" />
-          <button>Send</button>
+          <button className="ContactFormSendButton">Send</button>
         </form>
       </ResponsivePage>
     </>
