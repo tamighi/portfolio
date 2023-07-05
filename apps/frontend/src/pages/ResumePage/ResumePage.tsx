@@ -3,6 +3,7 @@ import { BackHomeButton, ResponsivePage } from "components";
 import { About } from "./About";
 import { Education } from "./Education";
 import { ResumeContactButton } from "./ResumeContactButton";
+import { Skills } from "./Skills";
 
 import "./ResumePage.css";
 
@@ -15,6 +16,7 @@ const ResumePage = () => {
           Download full resume
         </a>
         <About />
+        <Skills />
         <Education />
         <ResumeContactButton />
       </ResponsivePage>

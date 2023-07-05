@@ -1,0 +1,10 @@
+.WorkPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.WorkSection {
+  align-self: stretch;
+  text-align: center;
+}
