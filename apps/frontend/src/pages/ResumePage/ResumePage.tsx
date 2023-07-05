@@ -1,8 +1,7 @@
-import { BackHomeButton, ResponsivePage } from "components";
+import { BackHomeButton, ContactMeButton, ResponsivePage } from "components";
 
 import { About } from "./About";
 import { Education } from "./Education";
-import { ResumeContactButton } from "./ResumeContactButton";
 import { Skills } from "./Skills";
 
 import "./ResumePage.css";
@@ -10,15 +9,15 @@ import "./ResumePage.css";
 const ResumePage = () => {
   return (
     <>
-    <BackHomeButton />
+      <BackHomeButton />
       <ResponsivePage className="ResumePage">
-        <a href="/resume/download" download="">
+        <a href="/resume/download" download="" className="DownloadResumeButton">
           Download full resume
         </a>
         <About />
         <Skills />
         <Education />
-        <ResumeContactButton />
+        <ContactMeButton />
       </ResponsivePage>
     </>
   );

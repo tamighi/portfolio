@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.DownloadResumeButton {
+  align-self: self-end;
+}
+
 .ResumeSection {
   width: 100%;
   margin-bottom: 20px;
