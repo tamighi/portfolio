@@ -1,5 +1,4 @@
-import { ResponsivePage } from "components";
-import { Link } from "react-router-dom";
+import { BackHomeButton, ResponsivePage } from "components";
 
 import { About } from "./About";
 import { Education } from "./Education";
@@ -10,9 +9,7 @@ import "./ResumePage.css";
 const ResumePage = () => {
   return (
     <>
-      <Link className="ResumeBackLink" to="/">
-        Go home
-      </Link>
+    <BackHomeButton />
       <ResponsivePage className="ResumePage">
         <a href="/resume/download" download="">
           Download full resume

@@ -1,15 +1,21 @@
-import { ResponsivePage } from "components";
+import { BackHomeButton, ResponsivePage } from "components";
 import "./ContactPage.css";
 
 const ContactPage = () => {
   return (
-    <ResponsivePage>
-      <form className="ContactForm">
-        <input />
-        <input />
-        <textarea />
-      </form>
-    </ResponsivePage>
+    <>
+      <BackHomeButton />
+      <ResponsivePage className="ContactPage">
+        <form className="ContactFormContainer">
+          <div className="ContactFormTopInputs">
+            <input className="ContactFormInput" placeholder="name" />
+            <input className="ContactFormInput" placeholder="email" />
+          </div>
+          <textarea placeholder="message" />
+          <button>Send</button>
+        </form>
+      </ResponsivePage>
+    </>
   );
 };
 

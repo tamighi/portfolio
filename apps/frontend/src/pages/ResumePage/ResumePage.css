@@ -14,10 +14,6 @@
   font-size: 28px;
 }
 
-.ResumeSubtitle {
-  font-size: 22px;
-}
-
 .ResumeContent {
   font-size: 18px;
 }
@@ -31,9 +27,4 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.ResumeBackLink {
-  align-self: self-start;
-  margin: 5px 0 0 5px;
 }
