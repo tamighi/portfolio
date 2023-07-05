@@ -1,5 +1,5 @@
 import { App } from "App";
-import { ErrorPage, HomePage, ResumePage } from "pages";
+import { ContactPage, ErrorPage, HomePage, ResumePage } from "pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -14,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "resume",
         element: <ResumePage />,
+      },
+      {
+        path: "contact",
+        element: <ContactPage />,
       },
       {
         path: "*",
