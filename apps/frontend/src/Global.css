@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.81);
+  color: white;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 0.00938em;
+  font-weight: 400;
 }
 
 a {

@@ -3,3 +3,4 @@ export * from "./ResponsivePage";
 export * from "./ContactMeButton";
 export * from "./BackHomeButton";
 export * from "./Input";
+export * from "./Paragraph";

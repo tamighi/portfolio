@@ -1,5 +1,6 @@
 import "./Skills.css";
 
+// TODO: Logos
 const Skills = () => {
   return (
     <>

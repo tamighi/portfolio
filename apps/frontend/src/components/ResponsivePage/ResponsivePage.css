@@ -4,9 +4,8 @@
   margin-right: 25%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .ResponsivePage {
     margin: 20px 0 0 4px;
   }
 }
-

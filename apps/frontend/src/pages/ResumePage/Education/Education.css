@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.EducationSectionTitle {
+}
+
+.EducationSectionDate {
 }
 
 .EducationSectionHeader {
@@ -12,4 +20,7 @@
 .EducationSectionContent {
   display: grid;
   grid-template-columns: 2fr 1fr;
+}
+
+.EducationSectionDescription {
 }
