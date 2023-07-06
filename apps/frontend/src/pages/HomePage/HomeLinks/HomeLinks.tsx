@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./HomeLinks.css";
 
+// TODO: Contact link only shows email
 const HomeLinks = () => {
   return (
     <nav className="HomeLinks">

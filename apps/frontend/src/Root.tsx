@@ -1,5 +1,5 @@
 import { App } from "App";
-import { ContactPage, ErrorPage, HomePage, ResumePage, WorkPage } from "pages";
+import { ErrorPage, HomePage, ResumePage, WorkPage } from "pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -14,10 +14,6 @@ const router = createBrowserRouter([
       {
         path: "resume",
         element: <ResumePage />,
-      },
-      {
-        path: "contact",
-        element: <ContactPage />,
       },
       {
         path: "work",

@@ -1,3 +1,5 @@
+import "./Paragraph.css";
+
 type Props = React.HTMLAttributes<HTMLParagraphElement>;
 
 const Paragraph = (props: Props) => {
