@@ -1,10 +1,10 @@
 import { BackHomeButton, ResponsivePage } from "components";
 
 import correctionWebsiteImage from "assets/correctionwebsite.png";
+import cub3dGifExample from "assets/cub3dexample.gif"
 
 import "./WorkPage.css";
 
-// TODO
 const WorkPage = () => {
   return (
     <>
@@ -28,7 +28,15 @@ const WorkPage = () => {
         </div>
         <div className="WorkSection">
           <div className="WorkDemo">
-            Gif of cub3d + github link https://github.com/Lysique/cub3d
+            <img
+              alt="correctionwebsite"
+              src={cub3dGifExample}
+              className="WorkDemoImage"
+            />
+            <div className="WorkDemoText">
+              <span>Demo</span>
+              <span>Code</span>
+            </div>
           </div>
           <div className="WorkDescription">
             This project is inspired from the game Wolfenstein3D, using a
