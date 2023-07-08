@@ -1,5 +1,7 @@
 import { BackHomeButton, ResponsivePage } from "components";
 
+import correctionWebsiteImage from "assets/correctionwebsite.png";
+
 import "./WorkPage.css";
 
 // TODO
@@ -10,8 +12,15 @@ const WorkPage = () => {
       <ResponsivePage className="WorkPage">
         <div className="WorkSection">
           <div className="WorkDemo">
-            Image / video of correction website service + link to demo + link to
-            github
+            <img
+              alt="correctionwebsite"
+              src={correctionWebsiteImage}
+              className="WorkDemoImage"
+            />
+            <div className="WorkDemoText">
+              <span>Demo</span>
+              <span>Code</span>
+            </div>
           </div>
           <div className="WorkDescription">
             Full stack website with react in frontend and nestjs in backend.
