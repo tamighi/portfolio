@@ -6,18 +6,23 @@
 }
 
 .WorkSection {
-  align-self: stretch;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6px;
+}
+
+@media (max-width: 920px) {
+  .WorkSection {
+    grid-template-columns: 1fr;
+  }
 }
 
 .WorkDemo {
-  grid-column: span 1;
+  max-width: 500px;
+  justify-self: center;
   font-size: 22px;
 }
 
 .WorkDescription {
-  grid-column: span 2;
   font-size: 22px;
 }

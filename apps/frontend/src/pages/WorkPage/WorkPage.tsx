@@ -9,12 +9,12 @@ const WorkPage = () => {
       <BackHomeButton />
       <ResponsivePage className="WorkPage">
         <div className="WorkSection">
-          <div className="WorkDescription">
-            Full stack website with react in frontend and nestjs in backend.
-          </div>
           <div className="WorkDemo">
             Image / video of correction website service + link to demo + link to
             github
+          </div>
+          <div className="WorkDescription">
+            Full stack website with react in frontend and nestjs in backend.
           </div>
         </div>
         <div className="WorkSection">
