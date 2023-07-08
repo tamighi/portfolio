@@ -12,9 +12,12 @@ const HomeLinks = () => {
       <Link to="resume" className="HomeLink">
         Resume
       </Link>
-      <Link to="contact" className="HomeLink">
-        Contact
-      </Link>
+      <div>
+        <Link to="contact" className="HomeLink">
+          Contact
+        </Link>
+        <div>Contact me at amighithomas@gmail.com</div>
+      </div>
     </nav>
   );
 };
