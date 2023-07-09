@@ -1,13 +1,15 @@
-import "./ProjectBanner.css"
+import "./ProjectBanner.css";
 
 type Props = {
+  codeLink?: string;
+  demoLink?: string;
   src: string;
   alt: string;
   description: string;
 };
 
 const ProjectBanner = (props: Props) => {
-  const { src, alt, description } = props;
+  const { src, alt, description, codeLink, demoLink } = props;
 
   return (
     <div className="ProjectBanner">
@@ -15,8 +17,16 @@ const ProjectBanner = (props: Props) => {
         <div className="ProjectBannerImageContainer">
           <img alt={alt} src={src} className="ProjectBannerImage" />
           <div className="ProjectBannerLinks">
-            <a className="ProjectBannerLink">Demo</a>
-            <a className="ProjectBannerLink">Code</a>
+            {demoLink && (
+              <a target="_blank" className="ProjectBannerLink" href={demoLink}>
+                Demo
+              </a>
+            )}
+            {codeLink && (
+              <a target="_blank" className="ProjectBannerLink" href={codeLink}>
+                Code
+              </a>
+            )}
           </div>
         </div>
       </div>

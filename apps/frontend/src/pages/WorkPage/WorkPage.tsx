@@ -12,6 +12,9 @@ const WorkPage = () => {
       <BackHomeButton />
       <ResponsivePage className="WorkPage">
         <ProjectBanner
+          src={correctionWebsiteImage}
+          alt="correctionwebsite"
+          codeLink="https://github.com/tamighi/correction-service-website"
           description="
             This full stack website is built using React and NestJS, with
             authentication, PostgreSQL integration, and file services. It is
@@ -19,12 +22,11 @@ const WorkPage = () => {
             nginx. The project includes a custom UI library and utilizes React
             Query for efficient data handling with optimistic and undoable
             updates."
-          src={correctionWebsiteImage}
-          alt="correctionwebsite"
         />
         <ProjectBanner
           src={cub3dGifExample}
           alt="cub3dexample"
+          codeLink="https://github.com/Lysique/cub3d"
           description="
             This project is based on the FPS game Wolfenstein3D and utilizes a
             rendering technique called RayCasting. It is written entirely in C

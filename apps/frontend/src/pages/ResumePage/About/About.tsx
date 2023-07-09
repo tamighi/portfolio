@@ -10,8 +10,8 @@ const About = () => {
         teaching program that emphasized engaging projects and a self-directed
         learning model. I've since developped my web programing skills through
         different projects and I am actively looking for opportunities that
-        allow me to create reusable, maintainable, and scalable code in the web
-        development industry.
+        allow me to create reusable, maintainable, and scalable code and
+        components as a web developer.
       </Paragraph>
       <Paragraph>
         What I like: Music (violin), Sports (outdoor running, yoga), Learning
