@@ -8,12 +8,11 @@ const selfLearningJourneyDescription =
   "Deep learning on the best practices around frontend, backend and DevOps through a personal project built from scratch. ";
 
 const school19Description =
-  "Deep dive into software development; the school 19 (42 network) offers an original way of teaching in the form of projects implementation and peer to peer evaluation";
+  "Deep dive into software development; the school 19 (42 network) offers an original way of teaching in the form of projects implementation and peer to peer evaluation.";
 
 const ulbDescription =
   "Master’s degree in neuropsychology. Please see my full resume for more details !";
 
-// TODO: Handle overflow description
 // TODO: Links
 const Education = () => {
   return (

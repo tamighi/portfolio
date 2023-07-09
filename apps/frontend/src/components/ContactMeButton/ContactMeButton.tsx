@@ -4,6 +4,7 @@ import "./ContactMeButton.css";
 
 type Props = React.HTMLAttributes<HTMLAnchorElement>;
 
+// TODO: Contact click shows email
 const ContactMeButton = (props: Props) => {
   const { className, ...rest } = props;
   return (

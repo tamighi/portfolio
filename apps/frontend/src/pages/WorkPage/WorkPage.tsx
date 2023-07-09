@@ -12,8 +12,9 @@ const correctionWebsiteDescription =
 
 const cub3dDescription =
   "This project is based on the FPS game Wolfenstein3D and utilizes a rendering technique called RayCasting.\n\n" +
-  "It is written entirely in C and uses a simple rendering engine called MiniLibX. The project includes features such as rendering, simple enemy AI, a game loop, and game state handling."
+  "It is written entirely in C and uses a simple rendering engine called MiniLibX. The project includes features such as rendering, simple enemy AI, a game loop, and game state handling.";
 
+// TODO: Lazy download
 const WorkPage = () => {
   return (
     <>
@@ -25,7 +26,6 @@ const WorkPage = () => {
           alt="correctionwebsite"
           codeLink="https://github.com/tamighi/correction-service-website"
           description={correctionWebsiteDescription}
-
         />
         <ProjectBanner
           src={cub3dGifExample}
