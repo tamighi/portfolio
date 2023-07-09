@@ -1,4 +1,5 @@
 import { Paragraph } from "components";
+
 import "./ProjectBanner.css";
 
 type Props = {

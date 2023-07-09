@@ -45,7 +45,9 @@ const Education = () => {
             Master’s degree in neuropsychology; Please see my full resume for
             more details !
           </Paragraph>
-          <span>Download full resume</span>
+          <a href="/resume/download" download="">
+            Download full resume
+          </a>
         </div>
       </div>
     </>

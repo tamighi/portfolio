@@ -11,19 +11,16 @@ const ResumePage = () => {
     <>
       <BackHomeButton />
       <ResponsivePage className="ResumePage">
-        <a href="/resume/download" download="" className="DownloadResumeButton">
-          Download full resume
-        </a>
         <div className="ResumeSection">
-          <h2 className="ResumeTitle">About</h2>
+          <h2 className="ResumeSectionTitle">About</h2>
           <About />
         </div>
         <div className="ResumeSection">
-          <h2 className="ResumeTitle">Skills</h2>
+          <h2 className="ResumeSectionTitle">Skills</h2>
           <Skills />
         </div>
         <div className="ResumeSection">
-          <h2 className="ResumeTitle">Education</h2>
+          <h2 className="ResumeSectionTitle">Education</h2>
           <Education />
         </div>
         <ContactMeButton className="ResumeContactButton" />
