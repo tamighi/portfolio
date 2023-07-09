@@ -2,3 +2,29 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+@media (max-width: 920px) {
+  .SkillListsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.SkillList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.SkillContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.SkillTitle {
+  font-size: 24px;
+}
+
+.SkillText {
+  font-size: 18px;
+}
