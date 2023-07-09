@@ -1,0 +1,16 @@
+.EducationSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.EducationSectionTitle {
+  border-bottom: 1px solid;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.EducationSectionDate {
+  font-size: 26px;
+  font-weight: bold;
+}

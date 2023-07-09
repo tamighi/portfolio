@@ -1,14 +1,5 @@
-.ResumePage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .ResumeSection {
-  width: 100%;
   margin-bottom: 20px;
-  font-size: 18px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -21,4 +12,8 @@
 .ResumeSectionTitle {
   font-weight: bold;
   font-size: 48px;
+  border: 1px solid;
+  border-radius: 30px;
+  align-self: flex-start;
+  padding: 10px;
 }

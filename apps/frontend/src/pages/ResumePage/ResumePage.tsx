@@ -10,7 +10,7 @@ const ResumePage = () => {
   return (
     <>
       <BackHomeButton />
-      <ResponsivePage className="ResumePage">
+      <ResponsivePage >
         <div className="ResumeSection">
           <h2 className="ResumeSectionTitle">About</h2>
           <About />

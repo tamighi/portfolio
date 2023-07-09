@@ -1,20 +1,13 @@
+.EducationSections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .EducationSection {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 180px;
   overflow: hidden;
-}
-
-.EducationSectionTitle {
-}
-
-.EducationSectionDate {
-}
-
-.EducationSectionHeader {
-  display: flex;
-  justify-content: space-between;
 }
 
 .EducationSectionContent {
@@ -22,5 +15,9 @@
   grid-template-columns: 2fr 1fr;
 }
 
-.EducationSectionDescription {
+@media (max-width: 920px) {
+  .EducationSectionContent {
+    grid-template-columns: auto;
+  }
 }
+
