@@ -2,7 +2,7 @@ import { BackHomeButton, ResponsivePage } from "components";
 import { ProjectBanner } from "./ProjectBanner";
 
 import correctionWebsiteImage from "assets/correctionwebsite.png";
-import cub3dGifExample from "assets/cub3dexample.gif";
+import cub3dGifExample from "assets/cub3dexample.png";
 
 import "./WorkPage.css";
 
