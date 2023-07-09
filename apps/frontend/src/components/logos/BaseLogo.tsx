@@ -5,7 +5,7 @@ type Props = {
 
 const BaseLogo = (props: Props) => {
   const { src, alt } = props;
-  return <img src={src} alt={alt} width="48px" height="48px" />;
+  return <img src={src} alt={alt} height="48px" />;
 };
 
 export default BaseLogo;
