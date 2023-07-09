@@ -9,11 +9,11 @@ import underconstruction from "assets/underconstruction.png";
 export const App = () => {
   return (
     <div className="App">
-      <img
-        src={underconstruction}
-        alt="Under construction"
-        style={{ alignSelf: "center", maxWidth: "300px" }}
-      />
+      {/* <img */}
+      {/*   src={underconstruction} */}
+      {/*   alt="Under construction" */}
+      {/*   style={{ alignSelf: "center", maxWidth: "300px" }} */}
+      {/* /> */}
       <Outlet />
       <Footer />
     </div>

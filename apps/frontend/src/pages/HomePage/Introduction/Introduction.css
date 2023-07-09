@@ -5,9 +5,11 @@
 
 .IntroductionTitle {
   font-family: Caprasimo;
-  font-size: 32px;
+  font-size: 46px;
+  font-weight: bold;
 }
 
 .IntroductionSubtitle {
+  font-size: 18px;
   margin-left: 8px;
 }

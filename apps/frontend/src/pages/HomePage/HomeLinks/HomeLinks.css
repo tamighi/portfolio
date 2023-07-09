@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
 .HomeLinks {
   align-self: center;
   justify-self: center;
@@ -8,12 +10,11 @@
 
 @media (max-width: 920px) {
   .HomeLinks {
-    align-self: flex-start;
     margin-top: 20px;
   }
 }
 
 .HomeLink {
-  font-family: Caprasimo;
+  font-family: "Special Elite", cursive;
   font-size: 32px;
 }

@@ -1,3 +1,4 @@
+import { Paragraph } from "components";
 import "./ProjectBanner.css";
 
 type Props = {
@@ -30,7 +31,7 @@ const ProjectBanner = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="ProjectBannerDescription">{description}</div>
+      <Paragraph>{description}</Paragraph>
     </div>
   );
 };

@@ -1,13 +1,19 @@
 .HomePage {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomeContainer {
+  flex-grow: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  flex-grow: 1;
-  margin-bottom: 150px;
+  gap: 120px;
 }
 
 @media (max-width: 920px) {
-  .HomePage {
+  .HomeContainer {
     grid-template-columns: 1fr;
-    margin-bottom: 0;
   }
 }
