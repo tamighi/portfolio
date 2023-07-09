@@ -3,3 +3,9 @@
   margin: 0;
   white-space: break-spaces;
 }
+
+@media (max-width: 600px) {
+  .Paragraph {
+    font-size: 18px;
+  }
+}

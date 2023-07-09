@@ -8,7 +8,7 @@ import "./WorkPage.css";
 
 const correctionWebsiteDescription =
   "This full stack website is built using React and NestJS. It is compiled with Webpack, containerized with Docker and optimized with nginx.\n\n" +
-  "The backend implements authentication, a PostgreSQL database, and a file service and the frontend includes a custom UI library and utilizes React Query for efficient data handling with optimistic and undoable updates.";
+  "The backend implements authentication, a PostgreSQL database, aswell as a file service and the frontend includes a custom UI library and utilizes React Query for efficient data handling with optimistic and undoable updates.";
 
 const cub3dDescription =
   "This project is based on the FPS game Wolfenstein3D and utilizes a rendering technique called RayCasting.\n\n" +
