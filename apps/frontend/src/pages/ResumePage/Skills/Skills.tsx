@@ -12,7 +12,6 @@ const Skills = () => {
           <LanguageSkill Logo={ReactLogo} name ="React" />
           <span className="SkillText">Nestjs</span>
           <span className="SkillText">Typescript</span>
-          <span className="SkillText">Typeorm</span>
         </div>
         <div className="SkillList">
           <h4 className="SkillTitle">DevOps</h4>
