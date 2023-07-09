@@ -1,4 +1,5 @@
 import { ReactLogo } from "components";
+import { LanguageSkill } from "./LanguageSkill";
 
 import "./Skills.css";
 
@@ -8,10 +9,7 @@ const Skills = () => {
       <div className="SkillListsContainer">
         <div className="SkillList">
           <h4 className="SkillTitle">Web dev</h4>
-          <div className="SkillContainer">
-            <ReactLogo />
-            <span className="SkillText">React</span>
-          </div>
+          <LanguageSkill Logo={ReactLogo} name ="React" />
           <span className="SkillText">Nestjs</span>
           <span className="SkillText">Typescript</span>
           <span className="SkillText">Typeorm</span>

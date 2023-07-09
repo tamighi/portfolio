@@ -1,0 +1,13 @@
+.SkillContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.SkillTitle {
+  font-size: 24px;
+}
+
+.SkillText {
+  font-size: 18px;
+}
