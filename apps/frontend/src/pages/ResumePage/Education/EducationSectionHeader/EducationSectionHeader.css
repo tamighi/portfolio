@@ -15,10 +15,6 @@
   font-weight: bold;
 }
 
-.EducationSectionTitle::before {
-  content: "-  ";
-}
-
 .EducationSectionDate {
   font-size: 16px;
 }

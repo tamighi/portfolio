@@ -1,4 +1,4 @@
-import { BackHomeButton, ContactMeButton, ResponsivePage } from "components";
+import { BackHomeButton, ResponsivePage } from "components";
 
 import { About } from "./About";
 import { Education } from "./Education";
@@ -10,7 +10,7 @@ const ResumePage = () => {
   return (
     <>
       <BackHomeButton />
-      <ResponsivePage >
+      <ResponsivePage>
         <div className="ResumeSection">
           <h2 className="ResumeSectionTitle">About</h2>
           <About />
@@ -23,7 +23,6 @@ const ResumePage = () => {
           <h2 className="ResumeSectionTitle">Education</h2>
           <Education />
         </div>
-        <ContactMeButton className="ResumeContactButton" />
       </ResponsivePage>
     </>
   );

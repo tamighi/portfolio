@@ -1,0 +1,32 @@
+.RenderContactCard {
+  padding: 16px;
+  margin: 32px;
+  background-color: #3c3c8c;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.RenderContactText {
+  font-size: 24px;
+  word-wrap: break-word;
+}
+
+.RenderContactCloseButton {
+  position: absolute;
+  align-self: flex-end;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 3px 3px 0 3px;
+  transition: background-color 0.3s;
+}
+
+.RenderContactCloseButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

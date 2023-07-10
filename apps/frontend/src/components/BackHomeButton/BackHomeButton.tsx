@@ -4,6 +4,7 @@ import "./BackHomeButton.css";
 
 type Props = React.HTMLAttributes<HTMLAnchorElement>;
 
+// TODO: Position fixed and disapear when scrolling
 const BackHomeButton = (props: Props) => {
   const { className, ...rest } = props;
   return (

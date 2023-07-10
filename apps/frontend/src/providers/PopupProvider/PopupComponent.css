@@ -1,0 +1,14 @@
+.Popup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: transform 0.5s;
+  z-index: 1050;
+}
+
+.Open {
+  transform: translate(0, 0);
+}
+.Close {
+  transform: translate(0, 100%);
+}

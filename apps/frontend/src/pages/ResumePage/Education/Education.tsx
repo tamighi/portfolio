@@ -1,5 +1,8 @@
 import { Paragraph } from "components";
 import { EducationSectionHeader } from "./EducationSectionHeader";
+import { Link } from "react-router-dom";
+
+import cvPdf from "assets/cv_en.pdf"
 
 import "./Education.css";
 
@@ -24,21 +27,29 @@ const Education = () => {
         />
         <div className="EducationSectionContent">
           <Paragraph>{selfLearningJourneyDescription}</Paragraph>
-          <span>Links</span>
+          <Link to="/work" className="EducationLink">
+            Works
+          </Link>
         </div>
       </div>
       <div className="EducationSection">
         <EducationSectionHeader title="School 19" date="July 2021 - Sep 2022" />
         <div className="EducationSectionContent">
           <Paragraph>{school19Description}</Paragraph>
-          <span>Links</span>
+          <a
+            className="EducationLink"
+            href="https://github.com/Lysique"
+            target="_blank"
+          >
+            School projects
+          </a>
         </div>
       </div>
       <div className="EducationSection">
         <EducationSectionHeader title="ULB" date="Sep 2015 - June 2021" />
         <div className="EducationSectionContent">
           <Paragraph>{ulbDescription}</Paragraph>
-          <a href="/resume/download" download="">
+          <a className="EducationLink" href={cvPdf} download="cv.pdf">
             Download full resume
           </a>
         </div>
