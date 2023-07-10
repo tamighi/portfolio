@@ -10,6 +10,7 @@ type Props = {
   description: string;
 };
 
+// TODO: code link in description
 const ProjectBanner = (props: Props) => {
   const { src, alt, description, codeLink, demoLink } = props;
 

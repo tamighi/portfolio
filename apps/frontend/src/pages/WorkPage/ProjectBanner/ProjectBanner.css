@@ -21,6 +21,8 @@
 .ProjectBannerImage {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
 }
 
 .ProjectBannerLinks {
@@ -34,13 +36,15 @@
 
 .ProjectBannerLink {
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 8px 16px;
   transition: background-color 0.3s ease;
   cursor: pointer;
   border-radius: 30px;
+  color: black;
+  font-size: 18px;
 }
 
 .ProjectBannerLink:hover {
-  background-color: red;
+  background-color: rgba(255, 255, 255, 1);
 }

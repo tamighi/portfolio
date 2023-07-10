@@ -15,6 +15,7 @@ const cub3dDescription =
   "It is written entirely in C and uses a simple rendering engine called MiniLibX. The project includes features such as rendering, simple enemy AI, a game loop, and game state handling.";
 
 // TODO: Lazy download
+// TODO: Other image for cub3d
 const WorkPage = () => {
   return (
     <>
@@ -33,17 +34,6 @@ const WorkPage = () => {
           codeLink="https://github.com/Lysique/cub3d"
           description={cub3dDescription}
         />
-        <span>
-          Wanna see my other project ? Check out my github repository at{" "}
-          <a
-            href="https://github.com/tamighi"
-            target="_blank"
-            style={{ borderBottom: "1px solid" }}
-          >
-            https://github.com/tamighi
-          </a>
-          .
-        </span>
       </ResponsivePage>
     </>
   );
