@@ -1,14 +1,14 @@
 import { Paragraph } from "components";
-
-import "./Education.css";
 import { EducationSectionHeader } from "./EducationSectionHeader";
 
+import "./Education.css";
+
 const selfLearningJourneyDescription =
-  "Significant progress in developing my programming skills, particularly in web development.\n" +
-  "Deep learning on the best practices around frontend, backend and DevOps through a personal project built from scratch. ";
+  "I took this time to learn different topics, especially web development.\n\n" +
+  "I built a full-stack website from scratch using NestJS and React. I also created my own UI library and developed core utilities such as complex hooks and a REST API.";
 
 const school19Description =
-  "Deep dive into software development; the school 19 (42 network) offers an original way of teaching in the form of projects implementation and peer to peer evaluation.";
+  "Deep dive into software development. The school 19 (42 network) offers an original way of teaching in the form of projects implementation and peer to peer evaluation.";
 
 const ulbDescription =
   "Master’s degree in neuropsychology. Please see my full resume for more details !";
