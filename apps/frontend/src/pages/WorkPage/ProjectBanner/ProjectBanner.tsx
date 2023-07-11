@@ -10,7 +10,6 @@ type Props = {
   description: string;
 };
 
-// TODO: code link in description
 const ProjectBanner = (props: Props) => {
   const { src, alt, description, codeLink, demoLink } = props;
 
@@ -18,12 +17,7 @@ const ProjectBanner = (props: Props) => {
     <div className="ProjectBanner">
       <div className="ProjectBannerLeft">
         <div className="ProjectBannerImageContainer">
-          <img
-            alt={alt}
-            src={src}
-            className="ProjectBannerImage"
-            loading="lazy"
-          />
+            <img alt={alt} src={src} className="ProjectBannerImage" />
           <div className="ProjectBannerLinks">
             {demoLink && (
               <a target="_blank" className="ProjectBannerLink" href={demoLink}>
