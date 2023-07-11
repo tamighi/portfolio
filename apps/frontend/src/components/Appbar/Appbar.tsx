@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 
-import "./BackHomeButton.css";
+import "./Appbar.css";
 
-// TODO: disapear when scrolling
-const BackHomeButton = () => {
+const Appbar = () => {
   return (
-    <div className="Header">
+    <div className="Appbar">
       <Link className="BackHomeButton" to="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,4 +20,4 @@ const BackHomeButton = () => {
   );
 };
 
-export default BackHomeButton;
+export default Appbar;

@@ -1,4 +1,4 @@
-import { BackHomeButton, ResponsivePage } from "components";
+import { Appbar, ResponsivePage } from "components";
 import { ProjectBanner } from "./ProjectBanner";
 
 import correctionWebsiteImage from "assets/correctionwebsite.png";
@@ -18,7 +18,7 @@ const cub3dDescription =
 const WorkPage = () => {
   return (
     <>
-      <BackHomeButton />
+      <Appbar />
       <ResponsivePage className="WorkPage">
         <h1 className="WorkPageTitle">My projects</h1>
         <ProjectBanner

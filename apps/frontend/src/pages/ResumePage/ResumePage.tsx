@@ -1,4 +1,4 @@
-import { BackHomeButton, ResponsivePage } from "components";
+import { Appbar, ResponsivePage } from "components";
 
 import { About } from "./About";
 import { Education } from "./Education";
@@ -9,7 +9,7 @@ import "./ResumePage.css";
 const ResumePage = () => {
   return (
     <>
-      <BackHomeButton />
+      <Appbar />
       <ResponsivePage>
         <div className="ResumeSection">
           <h2 className="ResumeSectionTitle">About</h2>
