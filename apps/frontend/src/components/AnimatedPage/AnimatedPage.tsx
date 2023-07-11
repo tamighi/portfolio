@@ -15,7 +15,14 @@ const AnimatedPage = (props: Props) => {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence
+      mode="wait"
+      onExitComplete={() => {
+        if (window) {
+          window.scrollTo({ top: 0 });
+        }
+      }}
+    >
       <motion.div
         key={location.pathname}
         initial={{ opacity: 0, y: 20 }}
