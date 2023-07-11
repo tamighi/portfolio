@@ -17,7 +17,7 @@ const ProjectBanner = (props: Props) => {
     <div className="ProjectBanner">
       <div className="ProjectBannerLeft">
         <div className="ProjectBannerImageContainer">
-            <img alt={alt} src={src} className="ProjectBannerImage" />
+          <img alt={alt} src={src} className="ProjectBannerImage" />
           <div className="ProjectBannerLinks">
             {demoLink && (
               <a target="_blank" className="ProjectBannerLink" href={demoLink}>
