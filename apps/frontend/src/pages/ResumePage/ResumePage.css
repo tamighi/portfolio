@@ -12,8 +12,6 @@
 .ResumeSectionTitle {
   font-weight: bold;
   font-size: 48px;
-  border: 1px solid;
   border-radius: 30px;
   align-self: flex-start;
-  padding: 10px;
 }

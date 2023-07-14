@@ -21,18 +21,20 @@ const WorkPage = () => {
       <Appbar />
       <ResponsivePage className="WorkPage">
         <h1 className="WorkPageTitle">My projects</h1>
-        <ProjectBanner
-          src={correctionWebsiteImage}
-          alt="correctionwebsite"
-          codeLink="https://github.com/tamighi/correction-service-website"
-          description={correctionWebsiteDescription}
-        />
-        <ProjectBanner
-          src={cub3dGifExample}
-          alt="cub3dexample"
-          codeLink="https://github.com/Lysique/cub3d"
-          description={cub3dDescription}
-        />
+        <div className="ProjectSection">
+          <ProjectBanner
+            src={correctionWebsiteImage}
+            alt="correctionwebsite"
+            codeLink="https://github.com/tamighi/correction-service-website"
+            description={correctionWebsiteDescription}
+          />
+          <ProjectBanner
+            src={cub3dGifExample}
+            alt="cub3dexample"
+            codeLink="https://github.com/Lysique/cub3d"
+            description={cub3dDescription}
+          />
+        </div>
       </ResponsivePage>
     </>
   );

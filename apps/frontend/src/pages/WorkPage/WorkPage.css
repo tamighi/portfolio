@@ -2,11 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 120px;
 }
 
 .WorkPageTitle {
   text-align: center;
   font-size: 46px;
   font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.ProjectSection {
+  gap: 120px;
+  display: flex;
+  flex-direction: column;
 }
