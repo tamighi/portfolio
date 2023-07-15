@@ -1,29 +1,38 @@
+import {
+  CLogo,
+  CplusplusLogo,
+  DockerLogo,
+  GitLogo,
+  NestjsLogo,
+  ReactLogo,
+  TypescriptLogo,
+  WebpackLogo,
+} from "components";
+import { LanguageSkill } from "./LanguageSkill";
+
 import "./Skills.css";
 
-// TODO: Logos
 const Skills = () => {
   return (
     <>
       <div className="SkillListsContainer">
-        <ul>
-          <h4>Web dev</h4>
-          <li>React</li>
-          <li>Nestjs</li>
-          <li>Typescript</li>
-          <li>Typeorm</li>
-        </ul>
-        <ul>
-          <h4>Dev Ops</h4>
-          <li>Nginx</li>
-          <li>Webpack</li>
-          <li>Git</li>
-          <li>Docker</li>
-        </ul>
-        <ul>
-          <h4>Software development</h4>
-          <li>C++</li>
-          <li>C</li>
-        </ul>
+        <div className="SkillList">
+          <h4 className="SkillTitle">Web development</h4>
+          <LanguageSkill Logo={ReactLogo} name="React" />
+          <LanguageSkill Logo={NestjsLogo} name="NestJS" />
+          <LanguageSkill Logo={TypescriptLogo} name="Typescript" />
+        </div>
+        <div className="SkillList">
+          <h4 className="SkillTitle">Software development</h4>
+          <LanguageSkill Logo={CplusplusLogo} name="C++" />
+          <LanguageSkill Logo={CLogo} name="C" />
+        </div>
+        <div className="SkillList">
+          <h4 className="SkillTitle">Others</h4>
+          <LanguageSkill Logo={WebpackLogo} name="Webpack" />
+          <LanguageSkill Logo={GitLogo} name="Git" />
+          <LanguageSkill Logo={DockerLogo} name="Docker" />
+        </div>
       </div>
     </>
   );

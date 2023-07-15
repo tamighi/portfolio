@@ -1,0 +1,33 @@
+.Appbar {
+  background-color: var(--var-bg-color);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  padding: 5px;
+  border-radius: 0 0 10px 0;
+}
+
+.BackHomeButton {
+  align-self: flex-start;
+  display: flex;
+  align-items: flex-end;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.HomeIcon {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+@media (max-width: 920px) {
+  .BackHomeButton {
+    font-size: 18px;
+  }
+  .HomeIcon {
+    width: 24px;
+    height: 24px;
+  }
+}
+

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import { useShowContact } from "hooks";
 
 import "./HomeLinks.css";
 
-// TODO: Contact link only shows email
 const HomeLinks = () => {
+  const { show } = useShowContact();
+
   return (
     <nav className="HomeLinks">
       <Link to="work" className="HomeLink">
@@ -12,9 +14,14 @@ const HomeLinks = () => {
       <Link to="resume" className="HomeLink">
         Resume
       </Link>
-      <Link to="contact" className="HomeLink">
+      <a
+        onClick={() => {
+          show();
+        }}
+        className="HomeLink"
+      >
         Contact
-      </Link>
+      </a>
     </nav>
   );
 };

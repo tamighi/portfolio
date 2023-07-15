@@ -1,5 +1,6 @@
 import { App } from "App";
 import { ErrorPage, HomePage, ResumePage, WorkPage } from "pages";
+import { PopupProvider } from "providers";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -28,5 +29,9 @@ const router = createBrowserRouter([
 ]);
 
 export const Root = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <PopupProvider>
+      <RouterProvider router={router} />
+    </PopupProvider>
+  );
 };

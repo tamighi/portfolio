@@ -1,0 +1,52 @@
+.ProjectBanner {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: 18px;
+}
+
+@media (max-width: 920px) {
+  .ProjectBanner {
+    grid-template-columns: auto;
+  }
+}
+
+.ProjectBannerLeft {
+  justify-self: center;
+  width: 100%;
+}
+
+.ProjectBannerImageContainer {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.ProjectBannerImage {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.ProjectBannerLinks {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  bottom: 12px;
+  right: 6px;
+}
+
+.ProjectBannerLink {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 30px;
+  color: black;
+  font-size: 18px;
+}
+
+.ProjectBannerLink:hover {
+  background-color: rgba(255, 255, 255, 1);
+}

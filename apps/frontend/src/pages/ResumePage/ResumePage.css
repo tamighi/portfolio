@@ -1,18 +1,5 @@
-.ResumePage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.DownloadResumeButton {
-  align-self: self-end;
-}
-
 .ResumeSection {
-  width: 100%;
   margin-bottom: 20px;
-  font-size: 18px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -22,5 +9,9 @@
   margin-top: 24px;
 }
 
-.ResumeTitle {
+.ResumeSectionTitle {
+  font-weight: bold;
+  font-size: 48px;
+  border-radius: 30px;
+  align-self: flex-start;
 }

@@ -1,26 +1,43 @@
+.EducationSections {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .EducationSection {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 180px;
   overflow: hidden;
-}
-
-.EducationSectionTitle {
-}
-
-.EducationSectionDate {
-}
-
-.EducationSectionHeader {
-  display: flex;
-  justify-content: space-between;
 }
 
 .EducationSectionContent {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 50px;
 }
 
-.EducationSectionDescription {
+@media (max-width: 920px) {
+  .EducationSectionContent {
+    grid-template-columns: auto;
+  }
+}
+
+.EducationLink {
+  border: 1px solid;
+  padding: 6px 12px;
+  border-radius: 15px;
+  justify-self: flex-end;
+  align-self: flex-start;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.EducationLink:hover {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 920px) {
+  .EducationLink {
+    justify-self: center;
+  }
 }

@@ -1,5 +1,4 @@
-import { Footer } from "components";
-import { Outlet } from "react-router-dom";
+import { AnimatedOutlet, AnimatedPage, Footer } from "components";
 
 import "./App.css";
 import "./Global.css";
@@ -7,7 +6,9 @@ import "./Global.css";
 export const App = () => {
   return (
     <div className="App">
-      <Outlet />
+      <AnimatedPage>
+        <AnimatedOutlet />
+      </AnimatedPage>
       <Footer />
     </div>
   );

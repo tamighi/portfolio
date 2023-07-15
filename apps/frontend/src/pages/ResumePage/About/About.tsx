@@ -1,22 +1,18 @@
 import { Paragraph } from "components";
 
-// TODO: Hide hobbies
+const AboutParagraph =
+  "I'm a Neuropsychology master's graduate turned passionate developer.\n\n" +
+  "My journey led me to School 19 (42 network), renowned for its unique teaching program that emphasizes engaging projects and a self-directed learning model.\n\n" +
+  "I've since developped my web programing skills through different projects and I am actively looking for opportunities as a web developer.";
+
 const About = () => {
   return (
     <>
-      <Paragraph>
-        I'm a Neuropsychology master's graduate turned passionate developer. My
-        journey led me to School 19 (42 network), renowned for its unique
-        teaching program that emphasized engaging projects and a self-directed
-        learning model. I've since developped my web programing skills through
-        different projects and I am actively looking for opportunities that
-        allow me to create reusable, maintainable, and scalable code in the web
-        development industry.
-      </Paragraph>
-      <Paragraph>
+      <Paragraph>{AboutParagraph}</Paragraph>
+      {/* <Paragraph>
         What I like: Music (violin), Sports (outdoor running, yoga), Learning
         (coding, 3D modeling, finances, ...)
-      </Paragraph>
+      </Paragraph> */}
     </>
   );
 };

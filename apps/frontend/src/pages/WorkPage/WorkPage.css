@@ -4,17 +4,15 @@
   justify-content: center;
 }
 
-.WorkSection {
-  align-self: stretch;
+.WorkPageTitle {
   text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.ProjectSection {
+  gap: 120px;
   display: flex;
-  justify-content: space-between;
-}
-
-.WorkDemo {
-  font-size: 22px;
-}
-
-.WorkDescription {
-  font-size: 22px;
+  flex-direction: column;
 }

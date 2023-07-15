@@ -1,9 +1,15 @@
+import { useShowContact } from "hooks";
 import "./Footer.css";
 
 const Footer = () => {
+  const { show } = useShowContact();
   return (
     <div className="Footer">
-      <a target="_blank" href="https://github.com/tamighi" className="FooterLink">
+      <a
+        target="_blank"
+        href="https://github.com/tamighi"
+        className="FooterLink"
+      >
         Github
       </a>
       <a
@@ -12,6 +18,9 @@ const Footer = () => {
         className="FooterLink"
       >
         Linkedin
+      </a>
+      <a onClick={show} className="FooterLink">
+        Contact
       </a>
     </div>
   );

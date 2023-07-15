@@ -5,9 +5,18 @@
 
 .IntroductionTitle {
   font-family: Caprasimo;
-  font-size: 32px;
+  font-size: 46px;
+  font-weight: bold;
 }
 
 .IntroductionSubtitle {
+  font-size: 18px;
   margin-left: 8px;
+}
+
+@media (max-width: 920px) {
+  .IntroductionSubtitle {
+    display: block;
+    text-align: center;
+  }
 }
