@@ -11,8 +11,14 @@ const Skills = () => {
           return (
             <div className="SkillList" key={index}>
               <h4 className="SkillTitle">{skillx.branch}</h4>
-              {skillx.skills.map((skill) => {
-                return <LanguageSkill logo={skill.logo} name={skill.name} />;
+              {skillx.skills.map((skill, index) => {
+                return (
+                  <LanguageSkill
+                    key={index}
+                    logo={skill.logo}
+                    name={skill.name}
+                  />
+                );
               })}
             </div>
           );
