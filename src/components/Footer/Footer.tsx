@@ -1,8 +1,7 @@
-import { useShowContact } from "hooks";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
-  const { show } = useShowContact();
   return (
     <div className="Footer">
       <a
@@ -19,9 +18,9 @@ const Footer = () => {
       >
         Linkedin
       </a>
-      <a onClick={show} className="FooterLink">
+      <Link to="contact" className="FooterLink">
         Contact
-      </a>
+      </Link>
     </div>
   );
 };

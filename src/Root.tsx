@@ -1,6 +1,5 @@
 import { App } from "./App";
-import { ErrorPage, HomePage, ResumePage, WorkPage } from "pages";
-import { PopupProvider } from "providers";
+import { ContactPage, ErrorPage, HomePage, ResumePage, WorkPage } from "pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -21,6 +20,10 @@ const router = createBrowserRouter([
         element: <WorkPage />,
       },
       {
+        path: "contact",
+        element: <ContactPage />,
+      },
+      {
         path: "*",
         element: <ErrorPage />,
       },
@@ -29,9 +32,5 @@ const router = createBrowserRouter([
 ]);
 
 export const Root = () => {
-  return (
-    <PopupProvider>
-      <RouterProvider router={router} />
-    </PopupProvider>
-  );
+  return <RouterProvider router={router} />;
 };

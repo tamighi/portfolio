@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
-import { useShowContact } from "hooks";
 
 import "./HomeLinks.css";
 
 const HomeLinks = () => {
-  const { show } = useShowContact();
-
   return (
     <nav className="HomeLinks">
       <Link to="work" className="HomeLink">
@@ -14,14 +11,9 @@ const HomeLinks = () => {
       <Link to="resume" className="HomeLink">
         Resume
       </Link>
-      <a
-        onClick={() => {
-          show();
-        }}
-        className="HomeLink"
-      >
+      <Link to="contact" className="HomeLink">
         Contact
-      </a>
+      </Link>
     </nav>
   );
 };

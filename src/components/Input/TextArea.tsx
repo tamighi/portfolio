@@ -1,6 +1,6 @@
 import "./Input.css";
 
-type Props = React.HTMLAttributes<HTMLTextAreaElement>;
+type Props = React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 const TextArea = (props: Props) => {
   const { className, ...rest } = props;

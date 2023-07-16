@@ -1,0 +1,35 @@
+.ContactPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ContactFormCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 75%;
+  border-radius: 10px;
+  background-color: #3c3c8c;
+  align-self: center;
+  justify-self: center;
+  padding: 30px;
+}
+
+.ContactFormSendButton {
+  align-self: flex-start;
+}
+
+.ContactRight {
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgba(60,60,140,1) 0%, rgba(32,32,35,1) 100%);
+}
+
+@media (max-width: 920px) {
+  .ContactPage {
+    grid-template-columns: 1fr;
+  }
+
+  .ContactRight {
+    display: none;
+  }
+}
