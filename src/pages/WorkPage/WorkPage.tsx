@@ -13,7 +13,16 @@ const WorkPage = () => {
         <h1 className="WorkPageTitle">My projects</h1>
         <div className="ProjectSection">
           {works.map((work, index) => {
-            return <ProjectBanner key={index} demoLink={work.demoLink} src={work.imageSrc} alt={work.name} codeLink={work.githubLink} description={work.description} />
+            return (
+              <ProjectBanner
+                key={index}
+                demoLink={work.demoLink}
+                src={work.imageSrc}
+                alt={work.name}
+                codeLink={work.githubLink}
+                description={work.description}
+              />
+            );
           })}
         </div>
       </ResponsivePage>

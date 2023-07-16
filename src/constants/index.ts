@@ -27,7 +27,7 @@ const works = [
       "It is written entirely in C and uses a simple rendering engine called MiniLibX. The project includes features such as rendering, simple enemy AI, a game loop, and game state handling.",
     githubLink: "https://github.com/Lysique/cub3d",
     imageSrc: cub3dImage,
-  }
-]
+  },
+];
 
-export { works }
+export { works };
