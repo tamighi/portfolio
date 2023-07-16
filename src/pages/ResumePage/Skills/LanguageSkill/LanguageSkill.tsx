@@ -1,15 +1,15 @@
 import "./LanguageSkill.css";
 
 type Props = {
-  Logo: () => JSX.Element;
+  logo: string;
   name: string;
 };
 
 const LanguageSkill = (props: Props) => {
-  const { Logo, name } = props;
+  const { logo, name } = props;
   return (
     <div className="SkillContainer">
-      <Logo />
+      <img src={logo} alt={name} height="48px" />
       <span className="SkillText">{name}</span>
     </div>
   );

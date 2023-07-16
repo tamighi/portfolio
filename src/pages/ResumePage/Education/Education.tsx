@@ -2,7 +2,7 @@ import { Paragraph } from "components";
 import { EducationSectionHeader } from "./EducationSectionHeader";
 import { Link } from "react-router-dom";
 
-import cvPdf from "assets/cv_en.pdf"
+import { cvEn } from "assets";
 
 import "./Education.css";
 
@@ -49,7 +49,7 @@ const Education = () => {
         <EducationSectionHeader title="ULB" date="Sep 2015 - June 2021" />
         <div className="EducationSectionContent">
           <Paragraph>{ulbDescription}</Paragraph>
-          <a className="EducationLink" href={cvPdf} download="cv.pdf">
+          <a className="EducationLink" href={cvEn} download="cv.pdf">
             Download full resume
           </a>
         </div>
