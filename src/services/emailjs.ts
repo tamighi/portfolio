@@ -8,7 +8,6 @@ type EmailProps = {
 
 const email = {
   send: async ({ name, email, message }: EmailProps) => {
-    return null
     return emailjs.send(
       import.meta.env.VITE_EMAIL_SERVICE,
       import.meta.env.VITE_EMAIL_TEMPLATE,
