@@ -1,5 +1,4 @@
-import { Appbar, Input, ResponsivePage } from "components";
-import TextArea from "components/Input/TextArea";
+import { Appbar, Button, Input, ResponsivePage, TextArea } from "components";
 
 import "./ContactPage.css";
 
@@ -13,7 +12,7 @@ const ContactPage = () => {
             <Input placeholder="name" />
             <Input placeholder="email" />
             <TextArea rows={10} placeholder="message" />
-            <button className="ContactFormSendButton">Send</button>
+            <Button className="ContactFormSendButton">Send</Button>
         </form>
         <div className="ContactRight"></div>
       </ResponsivePage>
