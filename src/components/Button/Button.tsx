@@ -1,6 +1,6 @@
 import "./Button.css";
 
-type Props = React.HTMLAttributes<HTMLButtonElement>;
+type Props = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = (props: Props) => {
   const { className, ...rest } = props;
