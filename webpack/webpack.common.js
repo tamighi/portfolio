@@ -32,7 +32,7 @@ module.exports = {
       template: "src/index.html",
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "assets", to: "" }],
+      patterns: [{ from: "public", to: "" }],
     }),
   ],
 };
