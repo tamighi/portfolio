@@ -19,6 +19,7 @@ const works = [
       "This full stack website is built using React and NestJS. It is compiled with Webpack, containerized with Docker and optimized with nginx.\n\n" +
       "The backend implements authentication, a PostgreSQL database, aswell as a file service and the frontend includes a custom UI library and utilizes React Query for efficient data handling with optimistic and undoable updates.",
     githubLink: "https://github.com/tamighi/correction-service-website",
+    demoLink: "https://tamighi.github.io/work/correction-website-demo",
     imageSrc: correctionWebsite,
   },
   {
