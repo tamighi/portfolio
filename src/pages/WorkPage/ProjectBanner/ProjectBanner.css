@@ -18,6 +18,9 @@
 .ProjectBannerImageContainer {
   position: relative;
   aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ProjectBannerImage {
