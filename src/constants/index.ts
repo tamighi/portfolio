@@ -12,7 +12,15 @@ import {
   dockerLogo,
 } from "assets";
 
-const works = [
+type Work = {
+  name: string,
+  description: string,
+  demoLink?: string,
+  githubLink?: string,
+  imageSrc: string
+}
+
+const works: Work[] = [
   {
     name: "CorrectionServices",
     description:
