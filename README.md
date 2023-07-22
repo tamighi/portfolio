@@ -2,14 +2,16 @@
 
 ## Description
 
-Simple react custom portfolio
+Simple react custom portfolio.
+
+You can see this website at https://tamighi.github.io/.
 
 ## How to run
 
-### Development (port 5137)
+### Development
 
 ```sh
-npm run start
+npm run dev
 ```
 
 ### Production
