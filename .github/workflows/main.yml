@@ -28,6 +28,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: test
+        env:
+          VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
+          VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
+          VITE_EMAIL_PUBLIC_KEY: ${{ secrets.VITE_EMAIL_PUBLIC_KEY }}
+        run: echo ${VITE_EMAIL_TEMPLATE}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node
