@@ -4,7 +4,7 @@
 
 Simple react custom portfolio.
 
-You can see this website at https://tamighi.github.io/.
+You can see this website at https://tamighi.github.io/portfolio.
 
 ## How to run
 
