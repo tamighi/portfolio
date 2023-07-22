@@ -19,7 +19,6 @@ const works = [
       "This full stack website is built using React and NestJS. It is compiled with Webpack, containerized with Docker and optimized with nginx.\n\n" +
       "The backend implements authentication, a PostgreSQL database, aswell as a file service and the frontend includes a custom UI library and utilizes React Query for efficient data handling with optimistic and undoable updates.",
     githubLink: "https://github.com/tamighi/correction-service-website",
-    demoLink: "https://tamighi.github.io/work/correction-website-demo",
     imageSrc: correctionWebsite,
   },
   {
@@ -28,7 +27,6 @@ const works = [
       "This frontend website portfolio is built using React, Three.js, Framer Motion, and Tailwind CSS.\n\n" +
       "This project is based on a YouTube tutorial and has been further improved. With the integration of Three.js, I've incorporated stunning 3D designs and animations that bring the content of this website to life. The combination of React's powerful components, Framer Motion's smooth transitions, and Tailwind CSS's flexible styling allows for an engaging and visually appealing user experience.",
     githubLink: "https://github.com/tamighi/threejs-portfolio",
-    demoLink: "https://tamighi.github.io/work/threejs-portfolio",
     imageSrc: threejsPortfolio,
   },
   {
