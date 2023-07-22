@@ -24,6 +24,9 @@ jobs:
   # Single deploy job since we're just deploying
   deploy:
     environment:
+      VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
+      VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
+      VITE_EMAIL_PUBLIC_KEY: ${{ secrets.VITE_EMAIL_PUBLIC_KEY }}
       name: portfolio
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
