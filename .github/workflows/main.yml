@@ -23,9 +23,7 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    environment:
-      name: portfolio
-      url: ${{ steps.deployment.outputs.page_url }}
+    environment: production
     runs-on: ubuntu-latest
     steps:
       - name: test
