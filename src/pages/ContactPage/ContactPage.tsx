@@ -2,8 +2,6 @@ import React from "react";
 import { Appbar, Button, Input, ResponsivePage, TextArea } from "components";
 import { email } from "services";
 
-import "./ContactPage.css";
-
 const ContactPage = () => {
   const [form, setForm] = React.useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = React.useState(false);
@@ -35,8 +33,11 @@ const ContactPage = () => {
   return (
     <>
       <Appbar />
-      <ResponsivePage className="ContactPage">
-        <form className="ContactFormCard" onSubmit={handleSubmit}>
+      <ResponsivePage className="grid grid-cols-1 xl:grid-cols-2">
+        <form
+          className="flex flex-col gap-3 min-w-[75%] rounded-lg bg-[#2c2c4f] self-center justify-self-center p-8"
+          onSubmit={handleSubmit}
+        >
           <h2>Contact me !</h2>
           <Input
             name="name"
@@ -61,15 +62,11 @@ const ContactPage = () => {
             onChange={handleChange}
             required
           />
-          <Button
-            disabled={loading}
-            className="ContactFormSendButton"
-            type="submit"
-          >
+          <Button disabled={loading} className="self-start" type="submit">
             {loading ? "Sending ..." : "Send"}
           </Button>
         </form>
-        <div className="ContactRight"></div>
+        <div className="hidden xl:block rounded-2xl bg-gradient-to-r from-gray-800 to-indigo-900"></div>
       </ResponsivePage>
     </>
   );

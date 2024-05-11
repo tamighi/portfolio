@@ -1,17 +1,15 @@
 import { Link } from "react-router-dom";
 
-import "./HomeLinks.css";
-
 const HomeLinks = () => {
   return (
-    <nav className="HomeLinks">
-      <Link to="work" className="HomeLink">
+    <nav className="flex flex-col gap-[50px] md:mt-5 cursor-pointer self-center justify-self-center">
+      <Link to="work" className="font-elite text-3xl">
         Work
       </Link>
-      <Link to="resume" className="HomeLink">
+      <Link to="resume" className="font-elite text-3xl">
         Resume
       </Link>
-      <Link to="contact" className="HomeLink">
+      <Link to="contact" className="font-elite text-3xl">
         Contact
       </Link>
     </nav>

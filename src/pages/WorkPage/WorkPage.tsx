@@ -2,15 +2,13 @@ import { Appbar, ResponsivePage } from "components";
 import { ProjectBanner } from "./ProjectBanner";
 import { projects } from "constants";
 
-import "./WorkPage.css";
-
 const WorkPage = () => {
   return (
     <>
       <Appbar />
-      <ResponsivePage className="WorkPage">
-        <h1 className="WorkPageTitle">My projects</h1>
-        <div className="ProjectSection">
+      <ResponsivePage className="flex flex-col justify-center">
+        <h1 className="text-center text-5xl font-bold mb-20">My projects</h1>
+        <div className="gap-[120px] flex flex-col">
           {projects.map((project, index) => {
             return (
               <ProjectBanner

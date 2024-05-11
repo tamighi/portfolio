@@ -3,8 +3,6 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
-import "./AnimatedPage.css";
-
 type Props = {
   children: React.ReactNode;
 };
@@ -29,7 +27,7 @@ const AnimatedPage = (props: Props) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 20 }}
         transition={{ duration: 0.3 }}
-        className="AnimatedPage"
+        className="flex flex-grow flex-col"
       >
         {children}
       </motion.div>

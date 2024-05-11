@@ -1,5 +1,3 @@
-import "./LanguageSkill.css";
-
 type Props = {
   logo: string;
   name: string;
@@ -8,8 +6,8 @@ type Props = {
 const LanguageSkill = (props: Props) => {
   const { logo, name } = props;
   return (
-    <div className="SkillContainer">
-      <img src={logo} alt={name} height="48px" />
+    <div className="flex items-center gap-3">
+      <img src={logo} alt={name} className="h-12" />
       <span className="SkillText">{name}</span>
     </div>
   );

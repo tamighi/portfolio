@@ -1,30 +1,26 @@
 import { LanguageSkill } from "./LanguageSkill";
 import { skills } from "constants";
 
-import "./Skills.css";
-
 const Skills = () => {
   return (
-    <>
-      <div className="SkillListsContainer">
-        {skills.map((main, index) => {
-          return (
-            <div className="SkillList" key={index}>
-              <h4 className="SkillTitle">{main.branch}</h4>
-              {main.skills.map((skill, index) => {
-                return (
-                  <LanguageSkill
-                    key={index}
-                    logo={skill.logo}
-                    name={skill.name}
-                  />
-                );
-              })}
-            </div>
-          );
-        })}
-      </div>
-    </>
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
+      {skills.map((main, index) => {
+        return (
+          <div className="flex flex-col gap-3" key={index}>
+            <h4 className="text-lg">{main.branch}</h4>
+            {main.skills.map((skill, index) => {
+              return (
+                <LanguageSkill
+                  key={index}
+                  logo={skill.logo}
+                  name={skill.name}
+                />
+              );
+            })}
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

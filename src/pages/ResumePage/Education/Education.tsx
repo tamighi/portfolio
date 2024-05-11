@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 import { cvEn } from "assets";
 
-import "./Education.css";
-
 const selfLearningJourneyDescription =
   "I took this time to learn different topics, especially web development.\n\n" +
   "I built a full-stack website from scratch using NestJS and React. I also created my own UI library and developed core utilities such as complex hooks and a REST API.";
@@ -18,25 +16,28 @@ const ulbDescription =
 
 const Education = () => {
   return (
-    <div className="EducationSections">
-      <div className="EducationSection">
+    <div className="flex flex-col gap-20">
+      <div className="flex flex-col overflow-hidden">
         <EducationSectionHeader
           title="Self learning journey"
           date="Sep 2022 - Now"
         />
-        <div className="EducationSectionContent">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <Paragraph>{selfLearningJourneyDescription}</Paragraph>
-          <Link to="/work" className="EducationLink">
+          <Link
+            to="/work"
+            className="border-2 py-2 px-4 rounded-xl justify-self-center md:justify-self-end self-start hover:text-black hover:bg-white"
+          >
             Works
           </Link>
         </div>
       </div>
-      <div className="EducationSection">
+      <div className="flex flex-col overflow-hidden">
         <EducationSectionHeader title="School 19" date="July 2021 - Sep 2022" />
-        <div className="EducationSectionContent">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <Paragraph>{school19Description}</Paragraph>
           <a
-            className="EducationLink"
+            className="border-2 py-2 px-4 rounded-xl justify-self-center md:justify-self-end self-start hover:text-black hover:bg-white"
             href="https://github.com/Lysique"
             target="_blank"
           >
@@ -44,11 +45,15 @@ const Education = () => {
           </a>
         </div>
       </div>
-      <div className="EducationSection">
+      <div className="flex flex-col overflow-hidden">
         <EducationSectionHeader title="ULB" date="Sep 2015 - June 2021" />
-        <div className="EducationSectionContent">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <Paragraph>{ulbDescription}</Paragraph>
-          <a className="EducationLink" href={cvEn} download="cv.pdf">
+          <a
+            className="border-2 py-2 px-4 rounded-xl justify-self-center md:justify-self-end self-start hover:text-black hover:bg-white"
+            href={cvEn}
+            download="cv.pdf"
+          >
             Download full resume
           </a>
         </div>

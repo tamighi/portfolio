@@ -1,11 +1,10 @@
 import { AnimatedOutlet, AnimatedPage, Footer } from "components";
 
-import "./App.css";
 import "./Global.css";
 
 export const App = () => {
   return (
-    <div className="App">
+    <div className="min-h-screen flex flex-col">
       <AnimatedPage>
         <AnimatedOutlet />
       </AnimatedPage>

@@ -4,23 +4,23 @@ import { About } from "./About";
 import { Education } from "./Education";
 import { Skills } from "./Skills";
 
-import "./ResumePage.css";
-
 const ResumePage = () => {
   return (
     <>
       <Appbar />
       <ResponsivePage>
-        <div className="ResumeSection">
-          <h2 className="ResumeSectionTitle">About</h2>
+        <div className="flex flex-col gap-2 mb-8">
+          <h2 className="font-bold text-4xl rounded-3xl self-start">About</h2>
           <About />
         </div>
-        <div className="ResumeSection">
-          <h2 className="ResumeSectionTitle">Skills</h2>
+        <div className="flex flex-col gap-2 mb-8">
+          <h2 className="font-bold text-4xl rounded-3xl self-start">Skills</h2>
           <Skills />
         </div>
-        <div className="ResumeSection">
-          <h2 className="ResumeSectionTitle">Education</h2>
+        <div className="flex flex-col gap-2 mb-8">
+          <h2 className="font-bold text-4xl rounded-3xl self-start">
+            Education
+          </h2>
           <Education />
         </div>
       </ResponsivePage>
