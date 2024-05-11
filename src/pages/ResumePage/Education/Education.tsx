@@ -16,7 +16,6 @@ const school19Description =
 const ulbDescription =
   "Master’s degree in neuropsychology. Please see my full resume for more details !";
 
-// TODO: Links
 const Education = () => {
   return (
     <div className="EducationSections">

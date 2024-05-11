@@ -4,7 +4,6 @@ import { works } from "constants";
 
 import "./WorkPage.css";
 
-// TODO: Other image for cub3d
 const WorkPage = () => {
   return (
     <>
