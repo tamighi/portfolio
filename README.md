@@ -11,7 +11,7 @@ You can see this website at https://tamighi.github.io/portfolio.
 ### Development
 
 ```sh
-npm run dev
+npm start
 ```
 
 ### Production
