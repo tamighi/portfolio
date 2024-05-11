@@ -17,7 +17,7 @@ const WorkPage = () => {
               <ProjectBanner
                 key={index}
                 demoLink={work.demoLink}
-                src={work.imageSrc}
+                src={work.medias[0].src}
                 alt={work.name}
                 codeLink={work.githubLink}
                 description={work.description}
