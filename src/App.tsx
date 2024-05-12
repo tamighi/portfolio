@@ -1,4 +1,4 @@
-import { AnimatedOutlet, AnimatedPage, Footer } from "components";
+import { AnimatedOutlet, AnimatedPage, Footer } from "@/components";
 
 import "./index.css";
 

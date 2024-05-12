@@ -1,5 +1,5 @@
 import { LanguageSkill } from "./LanguageSkill";
-import { skills } from "constants";
+import { skills } from "@/constants";
 
 const Skills = () => {
   return (

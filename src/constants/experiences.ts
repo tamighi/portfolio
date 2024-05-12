@@ -1,4 +1,4 @@
-import { cvEn } from "assets";
+import { cvEn } from "@/assets";
 
 type ExperienceRef = {
   title: string;

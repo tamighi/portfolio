@@ -1,4 +1,4 @@
-import { Paragraph } from "components";
+import { Paragraph } from "@/components";
 
 const AboutParagraph =
   "I'm a Neuropsychology master's graduate turned passionate developer.\n\n" +

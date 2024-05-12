@@ -1,4 +1,4 @@
-import { correctionWebsite, threejsPortfolio, cub3d, todocal } from "assets";
+import { correctionWebsite, threejsPortfolio, cub3d, todocal } from "@/assets";
 
 type Media = {
   src: string;

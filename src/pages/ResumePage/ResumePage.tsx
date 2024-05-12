@@ -1,4 +1,4 @@
-import { Appbar, ResponsivePage } from "components";
+import { Appbar, ResponsivePage } from "@/components";
 
 import { About } from "./About";
 import { Experience } from "./Experience";

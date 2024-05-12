@@ -7,7 +7,7 @@ import {
   webpackLogo,
   gitLogo,
   dockerLogo,
-} from "assets";
+} from "@/assets";
 
 export const skills = [
   {

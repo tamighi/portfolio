@@ -1,6 +1,6 @@
-import { Appbar, ResponsivePage } from "components";
+import { Appbar, ResponsivePage } from "@/components";
 import { ProjectBanner } from "./ProjectBanner";
-import { projects } from "constants";
+import { projects } from "@/constants";
 
 const ProjectPage = () => {
   return (

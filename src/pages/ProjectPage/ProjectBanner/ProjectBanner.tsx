@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Loader, Paragraph } from "components";
+import { Loader, Paragraph } from "@/components";
 
 type Props = {
   codeLink?: string;

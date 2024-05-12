@@ -1,4 +1,4 @@
-import { Appbar, Paragraph } from "components";
+import { Appbar, Paragraph } from "@/components";
 
 const ErrorPage = () => {
   return (
