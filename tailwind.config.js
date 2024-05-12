@@ -5,14 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      primary: "#202023",
-      black: "#000",
-      white: "#fff"
-    },
-    fontFamily: {
-      elite: ["Special Elite", "cursive"],
-      caprasimo: ["Caprasimo"]
+    extends: {
+      colors: {
+        primary: "#202023",
+      },
+      fontFamily: {
+        elite: ["Special Elite", "cursive"],
+        caprasimo: ["Caprasimo"]
+      },
     },
   },
   plugins: [],
