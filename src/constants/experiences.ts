@@ -27,7 +27,7 @@ const experiences: Experiences = {
     description: `I took this time to learn different topics, especially web development.
 
 I built a full-stack website from scratch using NestJS and React. I also created my own UI library and developed core utilities such as complex hooks and a REST API.`,
-    link: { href: "/work", type: "relative", title: "Works" },
+    link: { href: "/projects", type: "relative", title: "Works" },
   },
   school19: {
     title: "School 19",

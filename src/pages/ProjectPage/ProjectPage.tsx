@@ -2,7 +2,7 @@ import { Appbar, ResponsivePage } from "components";
 import { ProjectBanner } from "./ProjectBanner";
 import { projects } from "constants";
 
-const WorkPage = () => {
+const ProjectPage = () => {
   return (
     <>
       <Appbar />
@@ -27,4 +27,4 @@ const WorkPage = () => {
   );
 };
 
-export default WorkPage;
+export default ProjectPage;

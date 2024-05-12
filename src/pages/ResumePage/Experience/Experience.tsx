@@ -1,16 +1,16 @@
-import { Paragraph } from "components";
-import { EducationSectionHeader } from "./EducationSectionHeader";
 import { Link } from "react-router-dom";
+import { ExperienceSectionHeader } from "./ExperienceSectionHeader";
 
+import { Paragraph } from "components";
 import { experiencesArray } from "constants";
 
-const Education = () => {
+const Experience = () => {
   return (
     <div className="flex flex-col gap-20">
       {experiencesArray.map((experience) => {
         return (
           <div key={experience.id} className="flex flex-col overflow-hidden">
-            <EducationSectionHeader
+            <ExperienceSectionHeader
               title={experience.title}
               date={experience.period}
             />
@@ -45,4 +45,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Experience;

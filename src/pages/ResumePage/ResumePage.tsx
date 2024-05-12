@@ -1,7 +1,7 @@
 import { Appbar, ResponsivePage } from "components";
 
 import { About } from "./About";
-import { Education } from "./Education";
+import { Experience } from "./Experience";
 import { Skills } from "./Skills";
 
 const ResumePage = () => {
@@ -29,9 +29,9 @@ const ResumePage = () => {
           <h2
             className="font-bold text-4xl rounded-3xl self-center md:self-start"
           >
-            Education
+            Experience
           </h2>
-          <Education />
+          <Experience />
         </div>
       </ResponsivePage>
     </>

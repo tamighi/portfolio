@@ -1,6 +1,6 @@
 import { AnimatedOutlet, AnimatedPage, Footer } from "components";
 
-import "./Global.css";
+import "./index.css";
 
 export const App = () => {
   return (

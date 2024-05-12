@@ -3,7 +3,7 @@ type Props = {
   date: string;
 };
 
-const EducationSectionHeader = (props: Props) => {
+const ExperienceSectionHeader = (props: Props) => {
   const { date, title } = props;
 
   return (
@@ -14,4 +14,4 @@ const EducationSectionHeader = (props: Props) => {
   );
 };
 
-export default EducationSectionHeader;
+export default ExperienceSectionHeader;
