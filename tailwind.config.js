@@ -9,10 +9,10 @@ export default {
       colors: {
         primary: "#202023",
       },
-      fontFamily: {
-        elite: ["Special Elite", "cursive"],
-        caprasimo: ["Caprasimo"]
-      },
+    },
+    fontFamily: {
+      elite: ["Special Elite", "cursive"],
+      caprasimo: ["Caprasimo"]
     },
   },
   plugins: [],
