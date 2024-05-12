@@ -35,7 +35,7 @@ const ContactPage = () => {
       <Appbar />
       <ResponsivePage className="grid grid-cols-1 xl:grid-cols-2">
         <form
-          className="flex flex-col gap-3 min-w-[75%] rounded-lg bg-[#2c2c4f]
+          className="flex flex-col gap-3 min-w-[75%] rounded-lg bg-secondary
             self-center justify-self-center p-8"
           onSubmit={handleSubmit}
         >
@@ -68,8 +68,8 @@ const ContactPage = () => {
           </Button>
         </form>
         <div
-          className="hidden xl:block rounded-2xl bg-gradient-to-r from-gray-800
-            to-indigo-900"
+          className="hidden xl:block rounded-2xl bg-gradient-to-r from-primary
+            to-secondary"
         ></div>
       </ResponsivePage>
     </>

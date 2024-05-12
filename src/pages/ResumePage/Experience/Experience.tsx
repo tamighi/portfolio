@@ -5,7 +5,7 @@ import { ExperienceSectionHeader } from "./ExperienceSectionHeader";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-6">
       {experiencesArray.map((experience) => {
         return (
           <div key={experience.id} className="flex flex-col overflow-hidden">
