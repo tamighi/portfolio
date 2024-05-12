@@ -26,7 +26,7 @@ export const projects: Projects = {
 
 It uses SQLite for data storage, while React Query enables optimistic and undoable updates.
 The app implements drag-and-drop functionality for task organization and ordering, and includes a tag system for categorization.
-It also features filtering, searching, and seamless task reuse.`,
+It also features filtering, searching and task reusability.`,
     githubLink: "https://github.com/tamighi/todocal",
     medias: [
       {
@@ -51,7 +51,7 @@ The backend implements authentication, a PostgreSQL database, aswell as a file s
     name: "Threejs Portfolio",
     description: `This frontend website portfolio is built using React, Three.js, Framer Motion, and Tailwind CSS.
 
-This project is based on a YouTube tutorial and has been further improved. With the integration of Three.js, I've incorporated stunning 3D designs and animations that bring the content of this website to life. The combination of React's powerful components, Framer Motion's smooth transitions, and Tailwind CSS's flexible styling allows for an engaging and visually appealing user experience.`,
+This project is based on a YouTube tutorial and has been further improved. It uses ThreeJS to integrate 3D designs and animations, tailwind for styles and Framer motion for animations.`,
     githubLink: "https://github.com/tamighi/threejs-portfolio",
     demoLink: "https://tamighi.github.io/threejs-portfolio",
     medias: [{ src: threejsPortfolio }],
