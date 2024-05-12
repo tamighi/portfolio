@@ -5,7 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extends: {
+    extend: {
       colors: {
         primary: "#202023",
       },
