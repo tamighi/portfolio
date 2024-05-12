@@ -1,21 +1,26 @@
-import { correctionWebsite, threejsPortfolio, cub3d, todocal } from "@/assets";
+import {
+  correctionWebsite,
+  threejsPortfolio,
+  cub3d,
+  todocal,
+} from "../projects";
 
 type Media = {
   src: string;
 };
 
-type Project = {
-  id: string;
-  name: string;
-  description: string;
-  demoLink?: string;
-  githubLink?: string;
-  medias: Media[];
+type Projects = {
+  [K: string]: {
+    name: string;
+    description: string;
+    demoLink?: string;
+    githubLink?: string;
+    medias: Media[];
+  };
 };
 
-export const projects: Project[] = [
-  {
-    id: "Todocal",
+export const projects: Projects = {
+  todocal: {
     name: "Todocal",
     description:
       "Todocal is a React native App with Expo. It is a todo calendar. Implements local SQLite database, infinite swipe, drag and drop, optimistic & undoable updates, infinite recurring events.",
@@ -26,8 +31,7 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    id: "CorrectionServices",
+  correctionServices: {
     name: "Correction Services",
     description:
       "This full stack website is built using React and NestJS. It is compiled with Webpack, containerized with Docker and optimized with nginx.\n\n" +
@@ -40,8 +44,7 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    id: "ThreejsPortfolio",
+  threejsPortfolio: {
     name: "Threejs Portfolio",
     description:
       "This frontend website portfolio is built using React, Three.js, Framer Motion, and Tailwind CSS.\n\n" +
@@ -50,8 +53,7 @@ export const projects: Project[] = [
     demoLink: "https://tamighi.github.io/threejs-portfolio",
     medias: [{ src: threejsPortfolio }],
   },
-  {
-    id: "cub3d",
+  cub3d: {
     name: "cub3d",
     description:
       "This project is based on the FPS game Wolfenstein3D and utilizes a rendering technique called RayCasting.\n\n" +
@@ -59,4 +61,9 @@ export const projects: Project[] = [
     githubLink: "https://github.com/Lysique/cub3d",
     medias: [{ src: cub3d }],
   },
-] as const;
+};
+
+export const projectsArray = Object.entries(projects).map(([id, project]) => ({
+  id,
+  ...project,
+}));

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { Paragraph } from "@/components";
 import { experiencesArray } from "@/assets";
 
@@ -15,30 +13,7 @@ const Experience = () => {
               title={experience.title}
               date={experience.period}
             />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <Paragraph>{experience.description}</Paragraph>
-              {experience.link?.type === "relative" ? (
-                <Link
-                  to={experience.link.href}
-                  className="border-2 py-2 px-4 rounded-xl justify-self-center
-                    md:justify-self-end self-start hover:text-black
-                    hover:bg-white"
-                >
-                  {experience.link.title}
-                </Link>
-              ) : experience.link || experience.download ? (
-                <a
-                  className="border-2 py-2 px-4 rounded-xl justify-self-center
-                    md:justify-self-end self-start hover:text-black
-                    hover:bg-white"
-                  href={experience.link?.href ?? experience.download?.href}
-                  download={experience.download?.download}
-                  target="_blank"
-                >
-                  {experience.link?.title ?? experience.download?.title}
-                </a>
-              ) : null}
-            </div>
+            <Paragraph>{experience.description}</Paragraph>
           </div>
         );
       })}

@@ -1,5 +1,5 @@
 import { Appbar, ResponsivePage } from "@/components";
-import { projects } from "@/assets";
+import { projectsArray } from "@/assets";
 
 import { ProjectBanner } from "./ProjectBanner";
 
@@ -10,7 +10,7 @@ const ProjectPage = () => {
       <ResponsivePage className="flex flex-col justify-center">
         <h1 className="text-center text-5xl font-bold mb-20">My projects</h1>
         <div className="gap-[120px] flex flex-col">
-          {projects.map((project, index) => {
+          {projectsArray.map((project, index) => {
             return (
               <ProjectBanner
                 key={index}
