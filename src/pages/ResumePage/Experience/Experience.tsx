@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { ExperienceSectionHeader } from "./ExperienceSectionHeader";
 
 import { Paragraph } from "@/components";
-import { experiencesArray } from "@/constants";
+import { experiencesArray } from "@/assets";
+
+import { ExperienceSectionHeader } from "./ExperienceSectionHeader";
 
 const Experience = () => {
   return (

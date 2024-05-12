@@ -1,6 +1,7 @@
 import { Appbar, ResponsivePage } from "@/components";
+import { projects } from "@/assets";
+
 import { ProjectBanner } from "./ProjectBanner";
-import { projects } from "@/constants";
 
 const ProjectPage = () => {
   return (
