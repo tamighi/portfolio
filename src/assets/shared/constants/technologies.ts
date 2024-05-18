@@ -1,29 +1,34 @@
 import {
-  reactLogo,
-  nestjsLogo,
-  typescriptLogo,
-  cPlusPlusLogo,
-  cLogo,
-  webpackLogo,
-  gitLogo,
-  dockerLogo,
-} from "@/assets";
+  typescript,
+  css,
+  reactjs,
+  nodejs,
+  git,
+  docker,
+  cpp,
+  c,
+  webpack,
+} from "../images";
 
-export const skills = [
+export const technologies = [
   {
     branch: "Web development",
     skills: [
       {
-        logo: reactLogo,
+        logo: reactjs,
         name: "React",
       },
       {
-        logo: nestjsLogo,
-        name: "NestJS",
+        logo: nodejs,
+        name: "NodeJS",
       },
       {
-        logo: typescriptLogo,
+        logo: typescript,
         name: "Typescript",
+      },
+      {
+        logo: css,
+        name: "CSS3",
       },
     ],
   },
@@ -31,11 +36,11 @@ export const skills = [
     branch: "Software development",
     skills: [
       {
-        logo: cPlusPlusLogo,
+        logo: cpp,
         name: "C++",
       },
       {
-        logo: cLogo,
+        logo: c,
         name: "C",
       },
     ],
@@ -44,15 +49,15 @@ export const skills = [
     branch: "Others",
     skills: [
       {
-        logo: webpackLogo,
+        logo: webpack,
         name: "Webpack",
       },
       {
-        logo: gitLogo,
+        logo: git,
         name: "Git",
       },
       {
-        logo: dockerLogo,
+        logo: docker,
         name: "Docker",
       },
     ],

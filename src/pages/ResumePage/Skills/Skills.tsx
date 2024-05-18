@@ -1,11 +1,11 @@
-import { skills } from "@/assets";
+import { technologies } from "@/assets";
 
 import { LanguageSkill } from "./LanguageSkill";
 
 const Skills = () => {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
-      {skills.map((main, index) => {
+      {technologies.map((main, index) => {
         return (
           <div className="flex flex-col gap-3" key={index}>
             <h4 className="text-lg">{main.branch}</h4>

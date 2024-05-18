@@ -3,8 +3,8 @@ import React from "react";
 import { Loader, Paragraph } from "@/components";
 
 type Props = {
-  codeLink?: string;
-  demoLink?: string;
+  codeLink: string | null;
+  demoLink: string | null;
   src: string;
   alt: string;
   description: string;
