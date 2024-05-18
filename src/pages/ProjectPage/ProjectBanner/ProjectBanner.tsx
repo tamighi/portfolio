@@ -15,13 +15,13 @@ const ProjectBanner = (props: Props) => {
   const [imageLoaded, setImageLoaded] = React.useState(false);
 
   return (
-    <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+    <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
       <div className="w-full justify-self-center">
         <div className="relative flex aspect-video items-center justify-center">
           <img
             alt={alt}
             src={src}
-            className="h-full rounded-3xl"
+            className="max-h-[50vh] lg:h-full rounded-3xl"
             style={{ display: imageLoaded ? "block" : "none" }}
             onLoad={() => setImageLoaded(true)}
           />
