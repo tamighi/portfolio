@@ -14,11 +14,7 @@ const ProjectPage = () => {
             return (
               <ProjectBanner
                 key={index}
-                demoLink={project.demoLink}
-                src={project.medias[0].src}
-                alt={project.name}
-                codeLink={project.githubLink}
-                description={project.description}
+                project={project}
               />
             );
           })}

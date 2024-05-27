@@ -14,15 +14,17 @@ type Tag = {
   color: string;
 };
 
+export type Project = {
+  name: string;
+  description: string;
+  demoLink: string | null;
+  githubLink: string;
+  medias: Readonly<Media[]>;
+  tags: Readonly<Tag[]>;
+};
+
 type Projects = {
-  [K: string]: {
-    name: string;
-    description: string;
-    demoLink: string | null;
-    githubLink: string;
-    medias: Readonly<Media[]>;
-    tags: Readonly<Tag[]>;
-  };
+  [K: string]: Project;
 };
 
 export const projects = {
