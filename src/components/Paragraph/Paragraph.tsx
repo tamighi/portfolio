@@ -7,7 +7,7 @@ const Paragraph = (props: Props) => {
   return (
     <p
       className={clsx(
-        "text-sm md:text-lg m-0 whitespace-break-spaces",
+        "text-sm md:text-lg m-0 whitespace-break-spaces font-normal",
         className
       )}
       {...rest}
