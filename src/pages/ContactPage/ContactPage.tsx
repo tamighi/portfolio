@@ -1,5 +1,5 @@
 import React from "react";
-import { Appbar, Button, Input, ResponsivePage, TextArea } from "@/components";
+import { Button, Input, ResponsivePage, TextArea } from "@/components";
 import { email } from "@/services";
 
 const ContactPage = () => {
@@ -7,7 +7,7 @@ const ContactPage = () => {
   const [loading, setLoading] = React.useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -27,12 +27,11 @@ const ContactPage = () => {
           setLoading(false);
           console.log(error);
           alert("Something went wrong ...");
-        }
+        },
       );
   };
   return (
     <>
-      <Appbar />
       <ResponsivePage className="grid grid-cols-1 xl:grid-cols-2">
         <form
           className="flex flex-col gap-3 min-w-[75%] rounded-lg bg-secondary

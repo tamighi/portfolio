@@ -4,18 +4,4 @@
 
 Simple react custom portfolio.
 
-You can see this website at https://tamighi.github.io/portfolio.
-
-## How to run
-
-### Development
-
-```sh
-npm start
-```
-
-### Production
-
-```sh
-npm run build
-```
+See [https://tamighi.github.io/portfolio](https://tamighi.github.io/portfolio).
