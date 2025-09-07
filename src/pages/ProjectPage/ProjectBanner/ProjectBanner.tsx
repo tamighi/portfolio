@@ -14,7 +14,7 @@ const ProjectBanner = (props: Props) => {
   return (
     <div className="flex flex-col items-center gap-10 text-3xl font-bold">
       <h2
-        className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600
+        className="text-transparent bg-clip-text bg-linear-to-r to-emerald-600
           from-sky-400"
       >
         {project.name}

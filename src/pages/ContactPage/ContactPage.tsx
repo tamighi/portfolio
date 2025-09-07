@@ -68,7 +68,7 @@ const ContactPage = () => {
           </Button>
         </form>
         <div
-          className="hidden xl:block rounded-2xl bg-gradient-to-r from-primary
+          className="hidden xl:block rounded-2xl bg-linear-to-r from-primary
             to-secondary"
         ></div>
       </ResponsivePage>
