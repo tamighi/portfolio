@@ -21,36 +21,38 @@ const ProjectBanner = (props: Props) => {
       </h2>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         <div className="w-full justify-self-center">
-          <div className="relative flex aspect-video items-center justify-center">
-            <img
-              alt={project.name}
-              src={project.medias[0].src}
-              className="max-h-[50vh] lg:h-full rounded-3xl"
-              style={{ display: imageLoaded ? "block" : "none" }}
-              onLoad={() => setImageLoaded(true)}
-            />
-            {imageLoaded ? null : <Loader />}
-            <div className="absolute bottom-3 right-2 flex flex-col gap-3">
-              {project.demoLink && (
-                <a
-                  target="_blank"
-                  className="bg-[#fffb] cursor-pointer rounded-3xl px-4 py-2
+          <div className="flex aspect-video items-center justify-center">
+            <div className="relative">
+              <img
+                alt={project.name}
+                src={project.medias[0].src}
+                className="max-h-[50vh] lg:h-full rounded-3xl"
+                style={{ display: imageLoaded ? "block" : "none" }}
+                onLoad={() => setImageLoaded(true)}
+              />
+              {imageLoaded ? null : <Loader />}
+              <div className="absolute bottom-3 right-2 flex flex-col gap-3">
+                {project.demoLink && (
+                  <a
+                    target="_blank"
+                    className="bg-[#fffb] cursor-pointer rounded-3xl px-4 py-2
                     text-lg font-bold text-black hover:bg-white"
-                  href={project.demoLink}
-                >
-                  Demo
-                </a>
-              )}
-              {project.githubLink && (
-                <a
-                  target="_blank"
-                  className="bg-[#fffb] cursor-pointer rounded-3xl px-4 py-2
+                    href={project.demoLink}
+                  >
+                    Demo
+                  </a>
+                )}
+                {project.githubLink && (
+                  <a
+                    target="_blank"
+                    className="bg-[#fffb] cursor-pointer rounded-3xl px-4 py-2
                     text-lg font-bold text-black hover:bg-white"
-                  href={project.githubLink}
-                >
-                  Code
-                </a>
-              )}
+                    href={project.githubLink}
+                  >
+                    Code
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </div>
