@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Loader, Paragraph } from "@/components";
 import { Project } from "@/assets";
+import { BulletPoints, Loader } from "@/components";
 
 type Props = {
   project: Project;
@@ -11,15 +11,28 @@ const ProjectBanner = (props: Props) => {
   const { project } = props;
   const [imageLoaded, setImageLoaded] = React.useState(false);
 
+  const Link = ({ link, label }: { link: string; label: string }) => {
+    return (
+      <a
+        target="_blank"
+        className="bg-[#fffb] cursor-pointer rounded-3xl px-4 py-2
+                    text-lg font-bold text-black hover:bg-white"
+        href={link}
+      >
+        {label}
+      </a>
+    );
+  };
+
   return (
-    <div className="flex flex-col items-center gap-10 text-3xl font-bold">
+    <div className="flex flex-col items-center gap-14">
       <h2
         className="text-transparent bg-clip-text bg-linear-to-r to-emerald-600
-          from-sky-400"
+          from-sky-400  text-3xl font-bold"
       >
         {project.name}
       </h2>
-      <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
         <div className="w-full justify-self-center">
           <div className="flex aspect-video items-center justify-center">
             <div className="relative">
@@ -33,30 +46,22 @@ const ProjectBanner = (props: Props) => {
               {imageLoaded ? null : <Loader />}
               <div className="absolute bottom-3 right-2 flex flex-col gap-3">
                 {project.demoLink && (
-                  <a
-                    target="_blank"
-                    className="bg-[#fffb] cursor-pointer rounded-3xl px-4 py-2
-                    text-lg font-bold text-black hover:bg-white"
-                    href={project.demoLink}
-                  >
-                    Demo
-                  </a>
+                  <Link label="Demo" link={project.demoLink} />
                 )}
                 {project.githubLink && (
-                  <a
-                    target="_blank"
-                    className="bg-[#fffb] cursor-pointer rounded-3xl px-4 py-2
-                    text-lg font-bold text-black hover:bg-white"
-                    href={project.githubLink}
-                  >
-                    Code
-                  </a>
+                  <Link label="Code" link={project.githubLink} />
                 )}
               </div>
             </div>
           </div>
         </div>
-        <Paragraph>{project.description}</Paragraph>
+        <div className="flex flex-col gap-8 text-xl">
+          <p className="whitespace-break-spaces">{project.description}</p>
+          <BulletPoints bullets={project.tools} label="Tools" />
+          {project.features && (
+            <BulletPoints bullets={project.features} label="Features" />
+          )}
+        </div>
       </div>
     </div>
   );

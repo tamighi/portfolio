@@ -9,18 +9,14 @@ type Media = {
   src: string;
 };
 
-type Tag = {
-  name: string;
-  color: string;
-};
-
 export type Project = {
   name: string;
   description: string;
   demoLink: string | null;
   githubLink: string;
   medias: Readonly<Media[]>;
-  tags: Readonly<Tag[]>;
+  tools: string[];
+  features?: string[];
 };
 
 type Projects = {
@@ -30,11 +26,9 @@ type Projects = {
 export const projects = {
   todocal: {
     name: "Todocal",
-    description: `Todocal is a mobile application developed using Expo and React Native. 
+    description: `Mobile application for managing tasks withing a calendar.
 
-It uses SQLite for data storage, while React Query enables optimistic and undoable updates.
-The app implements drag-and-drop functionality for task organization and ordering, and includes a tag system for categorization.
-It also features filtering, searching and task reusability.`,
+The focus was made on simplicity (minimizing number of clicks) and speed (optimistic updates and efficient queries).`,
     githubLink: "https://github.com/tamighi/todocal",
     demoLink: null,
     medias: [
@@ -42,22 +36,14 @@ It also features filtering, searching and task reusability.`,
         src: todocal,
       },
     ],
-    tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "design",
-        color: "pink-text-gradient",
-      },
-    ],
+    tools: ["React Native", "Expo", "SQLite", "React Query"],
+    features: ["Drag and drop", "Recurring events"],
   },
   correctionServices: {
     name: "Correction Services",
-    description: `This full stack website is built using React and NestJS. It is compiled with Webpack, containerized with Docker and optimized with nginx.
+    description: `A full-stack website built for learning purposes. 
 
-The backend implements authentication, a PostgreSQL database, aswell as a file service and the frontend includes a custom UI library and utilizes React Query for efficient data handling with optimistic and undoable updates.`,
+Emphasis was placed on implementing everything from scratch, including CI/CD deployment and custom UI components.`,
     githubLink: "https://github.com/tamighi/correction-service-website",
     demoLink: "https://tamighi.github.io/correction-demo",
     medias: [
@@ -65,19 +51,21 @@ The backend implements authentication, a PostgreSQL database, aswell as a file s
         src: correctionWebsite,
       },
     ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nestjs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "green-text-gradient",
-      },
+    tools: [
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "React Query",
+      "Lerna",
+      "Webpack",
+      "Docker",
+      "Nginx",
+    ],
+    features: [
+      "Custom UI library",
+      "Custom admin panel",
+      "Authentication",
+      "File upload",
     ],
   },
   threejsPortfolio: {
@@ -88,7 +76,7 @@ This project is based on a YouTube tutorial and has been further improved. It us
     githubLink: "https://github.com/tamighi/threejs-portfolio",
     demoLink: "https://tamighi.github.io/threejs-portfolio",
     medias: [{ src: threejsPortfolio }],
-    tags: [],
+    tools: ["To replace"],
   },
   cub3d: {
     name: "cub3d",
@@ -98,16 +86,7 @@ It is written entirely in C and uses a simple rendering engine called MiniLibX. 
     githubLink: "https://github.com/Lysique/cub3d",
     demoLink: null,
     medias: [{ src: cub3d }],
-    tags: [
-      {
-        name: "C",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rendering",
-        color: "green-text-gradient",
-      },
-    ],
+    tools: ["To replace"],
   },
 } satisfies Projects;
 
