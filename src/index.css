@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap')
-layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
 
 @import 'tailwindcss';
 
-:root {
-  --var-bg-color: #202023;
+@theme {
+  --color-primary: #202023;
+  --color-secondary: #2c2c4f;
+
+  --font-elite: "Special Elite", cursive;
+  --font-caprasimo: Caprasimo;
 }
 
 body {
-  background-color: var(--var-bg-color);
-  color: white;
+  background-color: #202023;
   font-family: "Roboto", sans-serif;
+  color: white;
   letter-spacing: 0.00938em;
   font-weight: 400;
 }
