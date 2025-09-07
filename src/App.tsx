@@ -4,7 +4,7 @@ import "./index.css";
 
 export const App = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col text-2xl">
       <Appbar />
       <AnimatedPage>
         <div className="pt-28 flex flex-col min-h-screen">

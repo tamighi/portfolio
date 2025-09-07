@@ -32,7 +32,7 @@ const ProjectBanner = (props: Props) => {
       >
         {project.name}
       </h2>
-      <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
+      <div className="grid grid-cols-1 gap-12 xl:grid-cols-2">
         <div className="w-full justify-self-center">
           <div className="flex aspect-video items-center justify-center">
             <div className="relative">
@@ -52,7 +52,7 @@ const ProjectBanner = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 text-xl">
+        <div className="flex flex-col gap-8 ">
           <p className="whitespace-break-spaces">{project.description}</p>
           <BulletPoints bullets={project.tools} label="Tools" />
           {project.features && (
