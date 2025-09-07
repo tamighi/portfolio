@@ -8,7 +8,7 @@ const ProjectPage = () => {
     <>
       <ResponsivePage className="flex flex-col justify-center">
         <h1 className="text-center text-5xl font-bold mb-20">My projects</h1>
-        <div className="gap-20 flex flex-col">
+        <div className="gap-28 flex flex-col">
           {projectsArray.map((project, index) => {
             return <ProjectBanner key={index} project={project} />;
           })}
