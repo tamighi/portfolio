@@ -45,12 +45,9 @@ const ProjectBanner = (props: Props) => {
               />
               {imageLoaded ? null : <Loader />}
               <div className="absolute bottom-3 right-2 flex flex-col gap-3">
-                {project.demoLink && (
-                  <Link label="Demo" link={project.demoLink} />
-                )}
-                {project.githubLink && (
-                  <Link label="Code" link={project.githubLink} />
-                )}
+                {project.links.map((link, i) => (
+                  <Link key={i} label={link.label} link={link.href} />
+                ))}
               </div>
             </div>
           </div>

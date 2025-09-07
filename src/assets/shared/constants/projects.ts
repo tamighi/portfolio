@@ -10,11 +10,15 @@ type Media = {
   src: string;
 };
 
+type Link = {
+  href: string;
+  label: string;
+};
+
 export type Project = {
   name: string;
   description: string;
-  demoLink: string | null;
-  githubLink: string;
+  links: Link[];
   medias: Readonly<Media[]>;
   tools: string[];
   features?: string[];
@@ -28,8 +32,14 @@ export const projects = {
   therapyServices: {
     name: "Therapy services",
     description: `A simple, responsive frontend website, designed according to client preferences and following solid design principles.`,
-    githubLink: "https://github.com/tamighi/marie-therapy",
-    demoLink: "https://tamighi.github.io/marie-therapy",
+    links: [
+      {
+        label: "Figma",
+        href: "https://www.figma.com/design/qfk1O1lY4IgJpreh9inOi1/Marie-Therapy-V1?node-id=54925-66&t=GjyoN93vTMGA6FH0-1",
+      },
+      { label: "Github", href: "https://github.com/tamighi/marie-therapy" },
+      { label: "Demo", href: "https://tamighi.github.io/marie-therapy" },
+    ],
     medias: [{ src: therapyServices }],
     tools: ["React", "TailwindCSS", "Figma"],
   },
@@ -38,8 +48,7 @@ export const projects = {
     description: `Mobile application for managing tasks withing a calendar.
 
 The focus was made on simplicity (minimizing number of clicks) and speed (optimistic updates and efficient queries).`,
-    githubLink: "https://github.com/tamighi/todocal",
-    demoLink: null,
+    links: [{ label: "Github", href: "https://github.com/tamighi/todocal" }],
     medias: [
       {
         src: todocal,
@@ -53,8 +62,13 @@ The focus was made on simplicity (minimizing number of clicks) and speed (optimi
     description: `A full-stack website built for learning purposes. 
 
 Emphasis was placed on implementing everything from scratch, including CI/CD deployment and custom UI components.`,
-    githubLink: "https://github.com/tamighi/correction-service-website",
-    demoLink: "https://tamighi.github.io/correction-demo",
+    links: [
+      {
+        label: "Github",
+        href: "https://github.com/tamighi/correction-service-website",
+      },
+      { label: "Demo", href: "https://tamighi.github.io/correction-demo" },
+    ],
     medias: [
       {
         src: correctionWebsite,
@@ -82,16 +96,17 @@ Emphasis was placed on implementing everything from scratch, including CI/CD dep
     description: ` A project based on the FPS game Wolfenstein 3D, implementing the raycasting technique. 
 
 Developed during my cursus at School 19, where we pushed the project to its limits and had a lot of fun experimenting.`,
-    githubLink: "https://github.com/Lysique/cub3d",
-    demoLink: null,
+    links: [{ label: "Github", href: "https://github.com/Lysique/cub3d" }],
     medias: [{ src: cub3d }],
     tools: ["C"],
   },
   portfolio3D: {
     name: "Portfolio 3D",
     description: `A 3D portfolio in progress...`,
-    githubLink: "https://github.com/tamighi/portfolio-3d",
-    demoLink: "https://tamighi.github.io/portfolio-3d/",
+    links: [
+      { label: "Github", href: "https://github.com/tamighi/portfolio-3d" },
+      { label: "Demo", href: "https://tamighi.github.io/portfolio-3d/" },
+    ],
     medias: [{ src: portfolio3D }],
     tools: ["React", "ThreeJS", "GLSL", "Blender"],
   },
