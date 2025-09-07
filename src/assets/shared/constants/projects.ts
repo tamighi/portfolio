@@ -1,7 +1,8 @@
 import {
   correctionWebsite,
-  threejsPortfolio,
   cub3d,
+  portfolio3D,
+  therapyServices,
   todocal,
 } from "../images/projects";
 
@@ -24,6 +25,14 @@ type Projects = {
 };
 
 export const projects = {
+  therapyServices: {
+    name: "Therapy services",
+    description: `A simple, responsive frontend website, designed according to client preferences and following solid design principles.`,
+    githubLink: "https://github.com/tamighi/marie-therapy",
+    demoLink: "https://tamighi.github.io/marie-therapy",
+    medias: [{ src: therapyServices }],
+    tools: ["React", "TailwindCSS", "Figma"],
+  },
   todocal: {
     name: "Todocal",
     description: `Mobile application for managing tasks withing a calendar.
@@ -37,7 +46,7 @@ The focus was made on simplicity (minimizing number of clicks) and speed (optimi
       },
     ],
     tools: ["React Native", "Expo", "SQLite", "React Query"],
-    features: ["Drag and drop", "Recurring events"],
+    features: ["Tasks management", "Drag and drop", "Recurring events"],
   },
   correctionServices: {
     name: "Correction Services",
@@ -68,25 +77,23 @@ Emphasis was placed on implementing everything from scratch, including CI/CD dep
       "File upload",
     ],
   },
-  threejsPortfolio: {
-    name: "Threejs Portfolio",
-    description: `This frontend website portfolio is built using React, Three.js, Framer Motion, and Tailwind CSS.
-
-This project is based on a YouTube tutorial and has been further improved. It uses ThreeJS to integrate 3D designs and animations, tailwind for styles and Framer motion for animations.`,
-    githubLink: "https://github.com/tamighi/threejs-portfolio",
-    demoLink: "https://tamighi.github.io/threejs-portfolio",
-    medias: [{ src: threejsPortfolio }],
-    tools: ["To replace"],
-  },
   cub3d: {
     name: "cub3d",
-    description: `This project is based on the FPS game Wolfenstein3D and utilizes a rendering technique called RayCasting.
+    description: ` A project based on the FPS game Wolfenstein 3D, implementing the raycasting technique. 
 
-It is written entirely in C and uses a simple rendering engine called MiniLibX. The project includes features such as rendering, simple enemy AI, a game loop, and game state handling.`,
+Developed during my cursus at School 19, where we pushed the project to its limits and had a lot of fun experimenting.`,
     githubLink: "https://github.com/Lysique/cub3d",
     demoLink: null,
     medias: [{ src: cub3d }],
-    tools: ["To replace"],
+    tools: ["C"],
+  },
+  portfolio3D: {
+    name: "Portfolio 3D",
+    description: `A 3D portfolio in progress...`,
+    githubLink: "https://github.com/tamighi/portfolio-3d",
+    demoLink: "https://tamighi.github.io/portfolio-3d/",
+    medias: [{ src: portfolio3D }],
+    tools: ["React", "ThreeJS", "GLSL", "Blender"],
   },
 } satisfies Projects;
 

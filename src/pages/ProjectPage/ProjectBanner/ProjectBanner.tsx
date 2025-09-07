@@ -16,7 +16,7 @@ const ProjectBanner = (props: Props) => {
       <a
         target="_blank"
         className="bg-[#fffb] cursor-pointer rounded-3xl px-4 py-2
-                    text-lg font-bold text-black hover:bg-white"
+                    text-lg font-bold text-black hover:bg-white border border-black"
         href={link}
       >
         {label}
