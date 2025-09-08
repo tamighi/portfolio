@@ -18,7 +18,7 @@ const email = {
         to_email: "thomas.amighi@hotmail.com",
         message: message,
       },
-      import.meta.env.VITE_EMAIL_PUBLIC_KEY,
+      { publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY },
     );
   },
 };
