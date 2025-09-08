@@ -1,4 +1,3 @@
-import { Paragraph } from "@/components";
 import { experiencesArray } from "@/assets";
 
 import { ExperienceSectionHeader } from "./ExperienceSectionHeader";
@@ -13,7 +12,7 @@ const Experience = () => {
               title={experience.title}
               date={experience.period}
             />
-            <Paragraph>{experience.description}</Paragraph>
+            <p>{experience.description}</p>
           </div>
         );
       })}

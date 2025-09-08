@@ -4,7 +4,7 @@ import { LanguageSkill } from "./LanguageSkill";
 
 const Skills = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-around gap-8">
+    <div className="flex flex-row flex-wrap gap-8">
       {skills.map((main, index) => {
         return (
           <div key={index} className="flex flex-col flex-1 items-center gap-6">
