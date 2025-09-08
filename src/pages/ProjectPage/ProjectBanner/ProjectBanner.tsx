@@ -35,7 +35,7 @@ const ProjectBanner = (props: Props) => {
       <div className="grid grid-cols-1 gap-12 xl:grid-cols-2">
         <div className="w-full justify-self-center">
           <div className="flex aspect-video items-center justify-center">
-            <div className="relative">
+            <div className="relative min-w-[40vw] flex justify-center">
               <img
                 alt={project.name}
                 src={project.medias[0].src}
