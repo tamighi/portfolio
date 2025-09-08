@@ -15,10 +15,10 @@ const email = {
         from_name: name,
         to_name: "Thomas",
         reply_to: email,
-        to_email: "amighithomas@gmail.com",
+        to_email: "thomas.amighi@hotmail.com",
         message: message,
       },
-      import.meta.env.VITE_EMAIL_PUBLIC_KEY
+      import.meta.env.VITE_EMAIL_PUBLIC_KEY,
     );
   },
 };
