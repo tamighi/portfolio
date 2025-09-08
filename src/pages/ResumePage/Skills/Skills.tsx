@@ -4,20 +4,22 @@ import { LanguageSkill } from "./LanguageSkill";
 
 const Skills = () => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="flex flex-row flex-wrap justify-around gap-8">
       {skills.map((main, index) => {
         return (
-          <div className="flex flex-col gap-4" key={index}>
-            <h2 className="text-2xl font-semibold">{main.branch}</h2>
-            {main.technologies.map((technology, index) => {
-              return (
-                <LanguageSkill
-                  key={index}
-                  logo={technology.logo}
-                  name={technology.name}
-                />
-              );
-            })}
+          <div key={index} className="flex flex-col flex-1 items-center gap-6">
+            <h2 className="text-2xl underline">{main.branch}</h2>
+            <div className="grid grid-flow-col grid-rows-5 gap-4">
+              {main.technologies.map((technology, index) => {
+                return (
+                  <LanguageSkill
+                    key={index}
+                    logo={technology.logo}
+                    name={technology.name}
+                  />
+                );
+              })}
+            </div>
           </div>
         );
       })}

@@ -6,9 +6,9 @@ type Props = {
 const LanguageSkill = (props: Props) => {
   const { logo, name } = props;
   return (
-    <div className="flex items-center gap-3">
-      <img src={logo} alt={name} className="h-12" />
-      <span className="text-lg">{name}</span>
+    <div className="flex flex-col items-center gap-2">
+      <span className="text-xl">{name}</span>
+      <img src={logo} alt={name} className="max-h-10 max-w-10" />
     </div>
   );
 };
