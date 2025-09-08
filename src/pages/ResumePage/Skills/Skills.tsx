@@ -9,7 +9,7 @@ const Skills = () => {
         return (
           <div key={index} className="flex flex-col flex-1 items-center gap-6">
             <h2 className="text-2xl underline">{main.branch}</h2>
-            <div className="grid grid-flow-col grid-rows-5 gap-4">
+            <div className="grid grid-flow-col [grid-template-rows:repeat(5,auto)] gap-4">
               {main.technologies.map((technology, index) => {
                 return (
                   <LanguageSkill

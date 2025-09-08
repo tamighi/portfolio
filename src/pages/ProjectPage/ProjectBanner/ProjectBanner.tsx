@@ -35,15 +35,19 @@ const ProjectBanner = (props: Props) => {
       <div className="grid grid-cols-1 gap-12 xl:grid-cols-2">
         <div className="w-full justify-self-center">
           <div className="flex aspect-video items-center justify-center">
-            <div className="relative min-w-[40vw] flex justify-center">
+            <div className="relative flex justify-center">
               <img
                 alt={project.name}
                 src={project.medias[0].src}
                 className="max-h-[50vh] lg:h-full rounded-3xl"
                 style={{ display: imageLoaded ? "block" : "none" }}
                 onLoad={() => setImageLoaded(true)}
-              />
-              {imageLoaded ? null : <Loader />}
+              ></img>
+              {imageLoaded ? null : (
+                <div className="min-w-[30vw] min-h-20">
+                  <Loader />
+                </div>
+              )}
               <div className="absolute bottom-3 right-2 flex flex-col gap-3">
                 {project.links.map((link, i) => (
                   <Link key={i} label={link.label} link={link.href} />

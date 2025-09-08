@@ -1,15 +1,23 @@
+import { Experience } from "@/assets";
+
 type Props = {
-  title: string;
-  date: string;
+  experience: Experience;
 };
 
 const ExperienceSectionHeader = (props: Props) => {
-  const { date, title } = props;
+  const { experience } = props;
 
   return (
-    <div className="flex flex-col justify-between mb-7">
-      <span className="text-lg font-bold">{title}</span>
-      <span className="text-md">{date}</span>
+    <div className="flex justify-between items-center gap-4">
+      <div className="flex items-center flex-row gap-4">
+        <img
+          className="max-h-12 max-w-12"
+          src={experience.icon}
+          alt={experience.companyName}
+        />
+        <span className="font-bold">{experience.title}</span>
+      </div>
+      <span>{experience.period}</span>
     </div>
   );
 };
