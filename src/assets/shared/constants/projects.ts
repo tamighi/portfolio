@@ -31,7 +31,7 @@ type Projects = {
 export const projects = {
   therapyServices: {
     name: "Therapy services",
-    description: `A simple, responsive frontend website, designed according to client preferences and following solid design principles.`,
+    description: `A simple, responsive, frontend website, designed according to client preferences and following solid design principles.`,
     links: [
       {
         label: "Figma",
