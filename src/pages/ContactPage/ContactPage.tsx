@@ -1,77 +1,38 @@
-import React from "react";
-import { Button, Input, ResponsivePage, TextArea } from "@/components";
-import { email } from "@/services";
+import { ResponsivePage } from "@/components";
+
+import ContactForm from "./ContactForm";
 
 const ContactPage = () => {
-  const [form, setForm] = React.useState({ name: "", email: "", message: "" });
-  const [loading, setLoading] = React.useState(false);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-  };
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    email
-      .send({ name: form.name, email: form.email, message: form.message })
-      .then(
-        () => {
-          setLoading(false);
-          alert("Message sent !");
-          setForm({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Something went wrong ...");
-        },
-      );
-  };
   return (
-    <>
-      <ResponsivePage className="grid grid-cols-1 xl:grid-cols-2">
-        <form
-          className="flex flex-col gap-3 min-w-[75%] rounded-lg bg-secondary
-            self-center justify-self-center p-8"
-          onSubmit={handleSubmit}
-        >
-          <h2>Contact me !</h2>
-          <Input
-            name="name"
-            placeholder="name"
-            value={form.name}
-            onChange={handleChange}
-            required
-          />
-          <Input
-            name="email"
-            placeholder="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-            type="email"
-          />
-          <TextArea
-            name="message"
-            rows={10}
-            placeholder="message"
-            value={form.message}
-            onChange={handleChange}
-            required
-          />
-          <Button disabled={loading} className="self-start" type="submit">
-            {loading ? "Sending ..." : "Send"}
-          </Button>
-        </form>
-        <div
-          className="hidden xl:block rounded-2xl bg-linear-to-r from-primary
-            to-secondary"
-        ></div>
-      </ResponsivePage>
-    </>
+    <ResponsivePage className="flex flex-col lg:flex-row gap-20 items-center">
+      <div className="flex-1 lg:min-w-fit min-w-[75%]">
+        <ContactForm />
+      </div>
+      <div className="flex-1 flex flex-col gap-8 justify-center">
+        <span>
+          <span className="font-bold">Email</span>
+          <span>: </span>
+          <a
+            href="thomas.amighi@hotmail.com"
+            className="text-blue-400 hover:text-blue-300 font-light underline"
+          >
+            thomas.amighi@hotmail.com
+          </a>
+        </span>
+        <span>
+          <span className="font-bold">Linkedin</span>
+          <span>: </span>
+          <a
+            href="https://www.linkedin.com/in/thomas-amighi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 font-light underline"
+          >
+            www.linkedin.com/in/thomas-amighi
+          </a>
+        </span>
+      </div>
+    </ResponsivePage>
   );
 };
 
