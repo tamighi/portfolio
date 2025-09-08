@@ -8,12 +8,38 @@ import {
   cpp,
   c,
   webpack,
+  angular,
+  figma,
+  php,
+  sql,
+  tailwind,
+  threejs,
 } from "../images";
 
-export const technologies = [
+export const skills = [
   {
-    branch: "Web development",
-    skills: [
+    branch: "Web",
+    technologies: [
+      {
+        logo: angular,
+        name: "Angular",
+      },
+      {
+        logo: php,
+        name: "PHP",
+      },
+      {
+        logo: sql,
+        name: "SQL",
+      },
+      {
+        logo: tailwind,
+        name: "TailwindCSS",
+      },
+      {
+        logo: threejs,
+        name: "ThreeJS",
+      },
       {
         logo: reactjs,
         name: "React",
@@ -33,8 +59,8 @@ export const technologies = [
     ],
   },
   {
-    branch: "Software development",
-    skills: [
+    branch: "Software",
+    technologies: [
       {
         logo: cpp,
         name: "C++",
@@ -47,10 +73,10 @@ export const technologies = [
   },
   {
     branch: "Others",
-    skills: [
+    technologies: [
       {
-        logo: webpack,
-        name: "Webpack",
+        logo: figma,
+        name: "Figma",
       },
       {
         logo: git,
@@ -59,6 +85,10 @@ export const technologies = [
       {
         logo: docker,
         name: "Docker",
+      },
+      {
+        logo: webpack,
+        name: "Webpack",
       },
     ],
   },

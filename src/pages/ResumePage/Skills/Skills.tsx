@@ -1,20 +1,20 @@
-import { technologies } from "@/assets";
+import { skills } from "@/assets";
 
 import { LanguageSkill } from "./LanguageSkill";
 
 const Skills = () => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
-      {technologies.map((main, index) => {
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
+      {skills.map((main, index) => {
         return (
-          <div className="flex flex-col gap-3" key={index}>
-            <h4 className="text-lg">{main.branch}</h4>
-            {main.skills.map((skill, index) => {
+          <div className="flex flex-col gap-4" key={index}>
+            <h2 className="text-2xl font-semibold">{main.branch}</h2>
+            {main.technologies.map((technology, index) => {
               return (
                 <LanguageSkill
                   key={index}
-                  logo={skill.logo}
-                  name={skill.name}
+                  logo={technology.logo}
+                  name={technology.name}
                 />
               );
             })}

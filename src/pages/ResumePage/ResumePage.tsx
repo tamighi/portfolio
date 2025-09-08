@@ -7,8 +7,8 @@ import Section from "./Section";
 
 const ResumePage = () => {
   return (
-    <>
-      <ResponsivePage>
+    <ResponsivePage>
+      <div className="flex flex-col gap-8">
         <Section title="About">
           <About />
         </Section>
@@ -18,8 +18,8 @@ const ResumePage = () => {
         <Section title="Experience">
           <Experience />
         </Section>
-      </ResponsivePage>
-    </>
+      </div>
+    </ResponsivePage>
   );
 };
 

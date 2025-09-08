@@ -8,7 +8,7 @@ const LanguageSkill = (props: Props) => {
   return (
     <div className="flex items-center gap-3">
       <img src={logo} alt={name} className="h-12" />
-      <span className="SkillText">{name}</span>
+      <span className="text-lg">{name}</span>
     </div>
   );
 };
