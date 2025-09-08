@@ -32,11 +32,10 @@ jobs:
     environment:
       name: portfolio
       url: ${{ steps.deployment.outputs.page_url }}
+      VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
+      VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
+      VITE_EMAIL_PUBLIC_KEY: ${{ secrets.VITE_EMAIL_PUBLIC_KEY }}
+
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-        env:
-          VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
-          VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
-          VITE_EMAIL_PUBLIC_KEY: ${{ secrets.VITE_EMAIL_PUBLIC_KEY }}
-
