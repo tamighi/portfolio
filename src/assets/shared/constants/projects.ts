@@ -31,7 +31,9 @@ type Projects = {
 export const projects = {
   therapyServices: {
     name: "Therapy services",
-    description: `A simple, responsive, frontend website designed according to client preferences and following solid design principles.`,
+    description:
+      "A simple, responsive, frontend website designed according to client preferences and following solid design principles.\n\n" +
+      "The project was first designed in Figma, then translated in React and Tailwind.",
     links: [
       {
         label: "Figma",
@@ -43,25 +45,11 @@ export const projects = {
     medias: [{ src: therapyServices }],
     tools: ["React", "TailwindCSS", "Figma"],
   },
-  todocal: {
-    name: "Todocal",
-    description: `Mobile application for managing tasks withing a calendar.
-
-The focus was made on simplicity (minimizing number of clicks) and speed (optimistic updates and efficient queries).`,
-    links: [{ label: "Github", href: "https://github.com/tamighi/todocal" }],
-    medias: [
-      {
-        src: todocal,
-      },
-    ],
-    tools: ["React Native", "Expo", "SQLite", "React Query"],
-    features: ["Tasks management", "Drag and drop", "Recurring events"],
-  },
   correctionServices: {
     name: "Correction Services",
-    description: `A full-stack website built for learning purposes. 
-
-Emphasis was placed on implementing everything from scratch, including CI/CD deployment and custom UI components.`,
+    description:
+      "A full-stack website built from scratch, including CI/CD deployment, custom UI components and backend API and AUTH, " +
+      "allowing me to gain hands-on expertise across the full modern web stack.",
     links: [
       {
         label: "Github",
@@ -91,18 +79,32 @@ Emphasis was placed on implementing everything from scratch, including CI/CD dep
       "File upload",
     ],
   },
+  todocal: {
+    name: "Todocal",
+    description: `React-Native mobile application for managing tasks withing a calendar.
+
+The focus was on simplicity of user experience (minimizing clicks) and speed (optimistic updates and efficient queries).`,
+    links: [{ label: "Github", href: "https://github.com/tamighi/todocal" }],
+    medias: [
+      {
+        src: todocal,
+      },
+    ],
+    tools: ["React Native", "Expo", "SQLite", "React Query"],
+    features: ["Tasks management", "Drag and drop", "Recurring events"],
+  },
   cub3d: {
     name: "cub3d",
-    description: ` A project based on the FPS game Wolfenstein 3D, implementing the raycasting technique. 
+    description: ` Based on the FPS game Wolfenstein 3D, implementing the raycasting technique. 
 
-Developed during my cursus at School 19, where we pushed the project to its limits and had a lot of fun experimenting.`,
+Developed during my cursus at School 19 and built entirely in C, where we pushed the project to its limits and had a lot of fun experimenting.`,
     links: [{ label: "Github", href: "https://github.com/Lysique/cub3d" }],
     medias: [{ src: cub3d }],
     tools: ["C"],
   },
   portfolio3D: {
     name: "Portfolio 3D",
-    description: `A 3D portfolio in progress...`,
+    description: `A 3D portfolio in progress..`,
     links: [
       { label: "Github", href: "https://github.com/tamighi/portfolio-3d" },
       { label: "Demo", href: "https://tamighi.github.io/portfolio-3d/" },
