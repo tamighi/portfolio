@@ -20,16 +20,16 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build -- --base="/portfolio"
-      - run: cp ./dist/index.html ./dist/404.html
-      - uses: actions/configure-pages@v4
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'dist'
         env:
           VITE_EMAIL_TEMPLATE: ${{ secrets.VITE_EMAIL_TEMPLATE }}
           VITE_EMAIL_SERVICE: ${{ secrets.VITE_EMAIL_SERVICE }}
           VITE_EMAIL_PUBLIC_KEY: ${{ secrets.VITE_EMAIL_PUBLIC_KEY }}
 
+      - run: cp ./dist/index.html ./dist/404.html
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dist'
 
   deploy:
     needs: build
