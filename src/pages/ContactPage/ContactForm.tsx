@@ -39,7 +39,7 @@ const ContactForm = () => {
     self-center justify-self-center p-8"
       onSubmit={handleSubmit}
     >
-      <h2 className="font-bold">You write, I answer</h2>
+      <h2 className="font-bold">Send me a message</h2>
       <div className="flex flex-col gap-4">
         <Input
           name="name"

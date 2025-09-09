@@ -22,13 +22,13 @@ const experiences: Experiences = {
     icon: european_union,
     description: `IT consultant at the European Commission Legal Service.
 
-Provided essential support in maintaining and enhancing SJ web applications, reducing workload by 25% and enabling the department to efficiently manage thousands of documents.`,
+Provided essential support in maintaining and enhancing SJ Angular and Symfony web applications, reducing workload by 25% and enabling the department to efficiently manage thousands of documents.`,
     features: [
       "Angular & Symfony applications maintenance",
       "Testing & quality frameworks implementation",
       "AI & EU API powered features",
     ],
-    languages: ["Angular", "Symfony (PHP)", "Oracle"],
+    languages: ["Angular", "Symfony (PHP)", "Oracle (SQL)"],
   },
   selfLearningJourney: {
     title: "Self learning journey",
@@ -57,10 +57,10 @@ Provided essential support in maintaining and enhancing SJ web applications, red
     companyName: "School 19",
     period: "July 2021 - Sep 2022",
     icon: fortytwo,
-    description: `I trained at School 19 (42 Network), a project-driven, peer-to-peer program that builds developers through autonomy, collaboration, and problem-solving. 
+    description: `I trained at School 19 (42 Network): a project-driven, peer-to-peer program that builds developers through autonomy, collaboration, and problem-solving. 
 
-I developed strong skills in algorithms, low-level programming, and full-stack web and graphic projects.`,
-    features: ["Algorithms", "Full-Stack website", "2D graphics"],
+I developed strong skills in algorithms, low-level programming, and full-stack web projects.`,
+    features: ["Algorithms", "Full-Stack website", "3D graphics"],
     languages: ["C", "C++", "React", "NestJS"],
   },
 };
