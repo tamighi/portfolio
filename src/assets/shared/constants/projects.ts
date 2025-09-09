@@ -95,7 +95,7 @@ The focus was on simplicity of user experience (minimizing clicks) and speed (op
   },
   cub3d: {
     name: "cub3d",
-    description: ` Based on the FPS game Wolfenstein 3D, implementing the raycasting technique. 
+    description: `Based on the FPS game Wolfenstein 3D, implementing the raycasting technique. 
 
 Developed during my cursus at School 19 and built entirely in C, where we pushed the project to its limits and had a lot of fun experimenting.`,
     links: [{ label: "Github", href: "https://github.com/Lysique/cub3d" }],
