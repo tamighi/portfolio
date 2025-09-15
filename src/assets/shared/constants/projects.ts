@@ -30,7 +30,7 @@ type Projects = {
 
 export const projects = {
   therapyServices: {
-    name: "Therapy services",
+    name: "Therapy Services",
     description:
       "A simple, responsive, frontend website designed according to client preferences and following solid design principles.\n\n" +
       "The project was first designed in Figma, then translated in React and Tailwind.",

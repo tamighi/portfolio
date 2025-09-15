@@ -17,12 +17,12 @@ type Experiences = {
 const experiences: Experiences = {
   SJeuropeanCommission: {
     title: "Full stack developper",
-    period: "Sep 2023 - August 2023",
+    period: "Sep 2023 - August 2025",
     companyName: "European Comission",
     icon: european_union,
     description: `IT consultant at the European Commission Legal Service.
 
-Provided essential support in maintaining and enhancing SJ Angular and Symfony web applications, reducing workload by 25% and enabling the department to efficiently manage thousands of documents.`,
+Provided essential support in maintaining and enhancing SJ Angular and Symfony web applications, reducing workload by 25% and enabling the department to efficiently manage thousands of documents by implementing AI and EU API powered features.`,
     features: [
       "Angular & Symfony applications maintenance",
       "Testing & quality frameworks implementation",
