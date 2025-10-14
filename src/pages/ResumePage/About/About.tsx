@@ -1,11 +1,15 @@
 const About = () => {
   return (
     <p>
-      I am a passionate and self-driven Full-Stack Web Developer with 2 years of
-      experience at the European Commission.
+      As a job finder, I'm a passionate Full Stack Developer who loves
+      understanding logic and building powerful features around it. I specialize
+      in Typescript (React, Node, ...) and Tailwind, but always love discovering
+      and learning new tools.
       <br />
-      <br />I am skilled in modern web technologies, quick to learn, and
-      currently chasing my dream of pursuing my career in Stockholm.
+      <br />
+      As a human, I am passionate about the beauty of the universe. I'm an
+      eternally curious being, always chasing one dream after another, and I
+      love sharing and being inspired by others.
     </p>
   );
 };
