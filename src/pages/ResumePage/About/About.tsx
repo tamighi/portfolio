@@ -7,9 +7,9 @@ const About = () => {
       and learning new tools.
       <br />
       <br />
-      As a human, I am passionate about the beauty of the universe. I'm an
-      eternally curious being, always chasing one dream after another, and I
-      love sharing and being inspired by others.
+      As a human, I am passionate about the beauty of the universe. I'm
+      eternally curious, always chasing my next dream and find joy in sharing,
+      connecting, and being inspired by others.
     </p>
   );
 };
