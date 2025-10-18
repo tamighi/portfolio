@@ -1,15 +1,14 @@
 const About = () => {
   return (
     <p>
-      As a job finder, I'm a passionate Full Stack Developer who loves
-      understanding logic and building powerful features around it. I specialize
-      in Typescript (React, Node, ...) and Tailwind, but always love discovering
-      and learning new tools.
+      As a job seeker, I'm a passionate Full Stack Developer specializing in
+      Typescript (React, NodeJS, ...) and Tailwind, but I always love
+      discovering and learning new tools.
       <br />
       <br />
       As a human, I am passionate about the beauty of the universe. I'm
-      eternally curious, always chasing my next dream and find joy in sharing,
-      connecting, and being inspired by others.
+      eternally curious and find joy in sharing, connecting, and being inspired
+      by others.
     </p>
   );
 };
